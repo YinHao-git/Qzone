@@ -1,0 +1,39 @@
+<extend name="Layout/index" />
+<block name="nav">
+	<h1>
+		<h1><{$title}></h1>
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+
+<block name="main">
+	<div class="col-md-3 h4">
+		<table class="table table-hover">
+			<tr>
+				<th>uid:</th><td><{$data.uid}></td>
+			</tr>
+			<tr>
+				<th>真实姓名:</th><td><{$data.name}></td>
+			</tr>
+			<tr>
+				<th>年龄:</th><td><{$data.age}></td>
+			</tr>
+			<tr>
+				<th>生日:</th><td><{$data.birth}></td>
+			</tr>
+			<tr>
+				<th>民族:</th><td><{$data.race}></td>
+			</tr>
+			<tr>
+				<th>地址:</th><td><{$data.address}></td>
+			</tr>
+			<tr>
+				<th>修改时间:</th><td><{$data.addtime}></td>
+			</tr>
+		</table>
+		<button class="btn " onclick="history.go(-1)">返回</button>
+	</div>
+</block>

@@ -1,0 +1,38 @@
+<extend name="Layout/index" />
+<block name="nav">
+	<h1>
+		后台用户编辑
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+
+<block name="main">
+	<center><h1>后台用户修改</h1>
+	<form action="<{:U('Admin/update')}>" method="post" enctype="multipart/form-data">
+	<table border=2 width="1000" cellspacing=0>
+			<p><input type="hidden" name="id" value="<{$_GET['id']}>"></p>
+			<p>姓名:<input type="text" name="name" value="<{$date['name']}>"></p>
+
+			<p>密码：<input type="password" name="pwd" value="<{$date['pwd']}>"></p>
+		
+			<p>性别:<input type="radio" name="sex" value="0" <if condition="$date.sex eq '0'">checked</if>>女
+			<input type="radio" name="sex" value="1" <if condition="$date.sex eq '1'">checked</if>>男</p>
+
+			<p>年龄:<input type="text" name="age" value="<{$date['age']}>"></p>
+
+			<p>地址:<input type="text" name="address" value="<{$date['address']}>"></p>
+
+			<p>权限:<input type="radio" name="status" value="0" <if condition="$date.status eq '0'">checked</if>>超级管理员
+			<input type="radio" name="status" value="1"  <if condition="$date.status eq '1'">checked</if>>普通管理员</p>
+				
+			<p>手机号：<input type="text" name="phone" value="<{$date['phone']}>"></p>
+
+			<p><input type="submit" value="提交修改"></p>
+			
+	</table>
+	</form>
+	</center>
+</block>

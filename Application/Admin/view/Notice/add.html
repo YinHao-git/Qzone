@@ -1,0 +1,26 @@
+<extend name="Layout/index" />
+<block name="nav">
+	<h1>
+		网站公告管理
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+<link href="__PUBLIC__/dist/css/bootstrap.min.css" rel="stylesheet">
+<block name="main">
+	<center><h1>网站公告添加</h1>
+		<form action="<{:U('Notice/doadd')}>" method="post">
+			公告内容：<textarea name="content" id="" cols="45" rows="6" style="resize:none"></textarea>
+					<p><span></span></p>
+						<input type="hidden" name="time" value="<{:time()}>">
+					<p>	<input type="reset" value="重置公告" class="btn btn-danger">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="发表公告" class="btn btn-success"></p>
+		</form>
+	</center>
+</block>
+<script src="__PUBLIC__/dist/js/jquery.min.js"></script>
+<script src="__PUBLIC__/dist/js/holder.js"></script>
+<script src="__PUBLIC__/dist/js/bootstrap.min.js"></script>

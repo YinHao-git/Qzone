@@ -1,0 +1,51 @@
+<extend name="Layout/index" />
+<block name="nav">
+	<h1>
+		<{$title1}>
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+
+<block name="main">
+	<h1><{$title2}></h1>
+
+	<form action="<{:U('Userh/search')}>" method="post">
+		uid:<input type="text" placeholder="请输入要查询的内容" name="uid" >
+		
+		<button class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button>
+	</form>
+	<table class="table table-hover">
+		<tr>
+			<th>#</th>
+			<th>uid</th>
+			<th>真实姓名</th>
+			<th>年龄</th>
+			<th>生日</th>
+			<th>民族</th>
+			<th>地址</th>
+			<th>修改时间</th>
+			
+			<th>操作</th>
+		</tr>
+		<foreach name="list" item="vo">
+		<tr>
+			<td><{$vo.id}></td>
+			<td><{$vo.uid}></td>
+			<td><{$vo.name}></td>
+			<td><{$vo.age}></td>
+			<td><{$vo.birth}></td>
+			<td><{$vo.race}></td>
+			<td><{$vo.address}></td>
+			<td><{$vo.addtime}></td>
+			<td>
+				<a href="<{:U('Userh/check',array('id'=>$vo['id']))}>" class="btn btn-primary">查看</a>
+			</td>
+		</tr>
+		</foreach>
+	</table>
+	<button class="btn "><{$page}></button>
+	<button class="btn " onclick="history.go(-1)">返回</button>
+</block>

@@ -1,0 +1,23 @@
+<extend name="Layout/index" />
+<!-- <extend name="Userh/index" /> -->
+<block name="nav">
+	<h1>
+		<{$title}>
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+<block name="main">
+	<form action="<{:U('Userh/update')}>" method="post">
+	<div class="col-md-3">
+		<input type="hidden" name="id" value="<{$data.id}>">
+		<input type="radio" name="status" value="0" <if condition="$data.status eq '0'">checked</if>>该用户不良 应被禁用<br>
+		<input type="radio" name="status" value="1" <if condition="$data.status eq '1'">checked</if>>普通用户<br>
+		<input type="radio" name="status" value="2" <if condition="$data.status eq '2'">checked</if>>会员<br>
+		<!-- <input type="text" name="username" > -->
+		<input type="submit" value="提交" class="btn">
+	</div>
+	</form>
+</block>

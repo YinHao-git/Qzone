@@ -1,0 +1,26 @@
+<extend name="Layout/index" />
+<block name="nav">
+	<h1>
+		网站友情链接管理
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+<link href="__PUBLIC__/dist/css/bootstrap.min.css" rel="stylesheet">
+<block name="main">
+	<center><h1>网站友情链接添加</h1>
+		<form action="<{:U('Link/doadd')}>" method="post">
+			友情链接名：<input type="text" name="linkname" value="">
+			友情链接地址：<input type="text" name="linkaddress" value="">
+					<p><span></span></p>
+					<p>	<input type="reset" value="重置链接" class="btn btn-danger">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="添加链接" class="btn btn-success"></p>
+		</form>
+	</center>
+</block>
+<script src="__PUBLIC__/dist/js/jquery.min.js"></script>
+<script src="__PUBLIC__/dist/js/holder.js"></script>
+<script src="__PUBLIC__/dist/js/bootstrap.min.js"></script>

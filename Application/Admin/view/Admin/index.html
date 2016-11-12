@@ -1,0 +1,65 @@
+<extend name="Layout/index" />
+<block name="nav">
+	<h1>
+		后台用户管理
+		<small>
+			<i class="icon-double-angle-right"></i>
+			 查看
+		</small>
+	</h1>
+</block>
+<link href="__PUBLIC__/dist/css/bootstrap.min.css" rel="stylesheet">
+<block name="main">
+	<center><h1><{$title}></h1>
+	<table class="table table-striped table-bordered table-responsive table-hover table-responsive container-fluid">
+		<tr>
+			<th>Id</th>
+			<th>Photo</th>
+			<th>Name</th>
+			<th>Sex</th>
+			<th>Age</th>
+			<th>Address</th>
+			<th>Status</th>
+			<th>Phone</th>
+			<th>AddTime</th>
+			<th>Action</th>
+		</tr>
+
+		<foreach name="list" item="v">
+		<tr>
+			<td><{$v['id']}></td>
+			<td><img style="height:60px" src="__PUBLIC__/Uploads/<{$v['photo']}>"></td>
+			<td><{$v['name']}></td>
+			<td>  
+				   <if condition="$v.sex eq '0'">女
+                    <elseif condition="$v.sex eq '1'" />男
+                   </if>
+            </td>
+			<td><{$v['age']}></td>
+			<td><{$v['address']}></td>
+			<td>
+				   <if condition="$v.status eq '0'">超级管理员
+	                <elseif condition="$v.status eq '1'" />普通管理员
+	               </if>
+             </td>
+			<td><{$v['phone']}></td>
+			<td><{:Date('Y-m-d H:i:s',$v['addtime'])}></td>
+			<td>
+				<a href="<{:U('Admin/add')}>"><button type='button' class='btn btn-success'>添加用户</button></a>
+				<a href="<{:U('edit',array('id'=>$v['id']))}>"><button type='button' class='btn btn-primary'>编辑用户</button></a>
+				<a href="<{:U('del',array('id'=>$v['id']))}>"><button type='button' class='btn btn-danger'>删除用户</button></a>
+			</td>
+		</tr>
+	</foreach>
+		<tr>
+			<td>
+			<button class="btn"><{$page}></button>
+			</td>
+		</tr>
+	</table>
+	</center>
+</block>
+	<script src="__PUBLIC__/dist/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/dist/js/holder.js"></script>
+    <script src="__PUBLIC__/dist/js/bootstrap.min.js"></script>
+    
