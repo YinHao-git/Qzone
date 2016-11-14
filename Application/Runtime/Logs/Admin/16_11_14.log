@@ -1,0 +1,21 @@
+[ 2016-11-14T09:26:33+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Index/login.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-11-14T09:47:42+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Userh/getInfo.html
+ERR: Call to a member function count() on array
+
+[ 2016-11-14T09:47:55+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Userh/getInfo.html
+ERR: Call to a member function count() on array
+
+[ 2016-11-14T09:54:22+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Note/tables.html
+ERR: 非法操作:tables
+
+[ 2016-11-14T09:54:51+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Notice/error-404.html
+ERR: 非法操作:error-404
+
+[ 2016-11-14T09:55:10+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Notice/error-404.html
+ERR: 非法操作:error-404
+
+[ 2016-11-14T09:55:16+08:00 ] 127.0.0.1 /qzone/index.php/Admin/Notice/blank.html
+ERR: 非法操作:blank
+

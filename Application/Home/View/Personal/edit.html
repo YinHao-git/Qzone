@@ -1,0 +1,101 @@
+<extend name="Homepage/index" />
+<block name="lunpo"></block>
+
+<block name="content">
+	<section id="content"><div class="ic"></div>
+  <div class="border-horiz"></div>
+ 
+  <div class="box-contact">
+    <h3>个人档 </h3>
+    <form id="contact-form">
+      <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
+      <fieldset>
+      <form action="<{:U('Personal/edit')}>" method="post">
+        <div class="coll-1">
+          <div>
+            <div class="form-txt">昵称:</div>
+            <label class="name">
+              <!-- 长度限制 -->
+              <input type="text" name="username">
+              <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label> -->
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">真实姓名:</div>
+            <label class="name">
+              <input type="text" name="name">
+              <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> --></label> 
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">电话号码:</div>
+            <label class="phone">
+              <input type="tel" name="phone">
+              <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">性别:</div>
+            <!-- <label class="email"> -->
+           
+              <select name="" id="" style="width:50px;">
+                <option value="0">女</option>
+                <option value="1">男</option>
+              </select>
+              <!-- <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span>  -->
+            <!-- </label> -->
+            <br><br>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-text">出生年月</div>
+            <select name="" id="">
+              <option value="0">1995</option>
+            </select>
+            <select name="" id="">
+              <option value="0">10</option>
+            </select>
+            <select name="" id="">
+              <option value="0">16</option>
+            </select>
+            <br><br>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-text">住址</div>
+            <select name="" id="">
+              <option value="0">江苏省</option>
+            </select>
+            <select name="" id="">
+              <option value="0">泰州</option>
+            </select>
+            <br><br>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">民族:</div>
+            <label class="name">
+              <input type="text" name="name">
+              <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label> -->
+            <div class="clear"></div>
+          </div>
+        </div>
+      </form>
+
+        <div class="coll-2">
+          <div>
+            <div class="form-txt">个性签名:</div>
+             <label class="message">
+              
+              <textarea></textarea>
+              <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label> 
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="btns"> <a class="btn" href="<{:U('Personal/index')}>">保存</a><!--  <a class="btn" data-type="submit">send</a> --> </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
+</block>        

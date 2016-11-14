@@ -76,12 +76,16 @@ class UserhController extends Controller
 	// 用户详细信息
 	public function getInfo()
 	{
+		
+
 		$data=M('info')->select();
 		// dump($data);exit;
 		$this->assign('title1','用户管理');
 
 		$this->assign('title2','用户详细信息');
 		$this->assign('list',$data);
+		
+
 		$this->display();
 	}
 	//查看用户详细信息

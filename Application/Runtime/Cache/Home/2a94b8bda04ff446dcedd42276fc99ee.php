@@ -7,6 +7,6 @@
  <body>
  	<h1>TP</h1>
  	<hr>
- 	{:date('Y-m-d H:i:s')}
+ 	<?php echo date('Y-m-d H:i:s');?>
  </body>
  </html>
