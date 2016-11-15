@@ -1,0 +1,61 @@
+<extend name="Homepage/index" />
+<block name="lunpo"></block>
+<block name="content">
+	 <div class="padd-1" style="margin-left:300px;">
+        <h3>我的好友</h3>
+     </div>
+		<div class="dropdown col-md-2" style="background:#abcdef;width:600px;height:160px;">
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			   	<volist name="li" id="s">
+			   	<span>
+			   		<li >
+		                <a data-toggle="dropdown" href="#" style="font-size:28px;color:red;">新消息</a> <br>
+						昵称: <{$s.username}>&nbsp;&nbsp;<br/>
+						性别：<if condition="$v.sex eq '0'">女
+			                    <else />男
+			                    </if>&nbsp;&nbsp;<br/>
+						<a class='btn btn-success' href="<{:U('Friend/yes',array('id'=>$s['id']))}>"> 同意</a>&nbsp;&nbsp;
+						<a class="btn btn-default" href="<{:U('Friend/no')}>">	 拒绝</a>
+			   		</li>
+		   		</span>
+				</volist>
+	        </ul>
+		</div>
+	  <center>
+		<form action="<{:U('Friend/add')}>" met
+			hod="post">
+	     <div>
+	     	<input type="text" name="phone" placeholder="输入手机号" style="width:200px;height:30px">
+	     	<button style="width:100px;height:40px;background:#abcdef;cursor:pointer;">搜索好友</button>
+	     </div>
+	    </form>
+     <table class="table table-hover"  width="600px" cellspacing="0" style="text-align: center;color:gray">
+		<tr>
+			<td><b>好友昵称</b></td>
+			<td><b>好友性别</b></td>
+			<td><b>好友手机</b></td>
+			<td><b>删除好友</b></td>
+		</tr>
+		<volist name="data" id="v">
+			<tr>
+			<td><{$v.username}></td>
+			<td> 
+				<if condition="$v.sex eq '0'">女
+                    <else />男
+                    </if>
+            </td>
+			<td><{$v.phone}></td>
+			<td>
+                <input type="hidden" value="<{$v.id}>">
+                <a href="<{:U('del',array('id'=>$v['id']))}>" class="btn btn-danger" style="cursor:pointer;">点击删除</a>
+			</td>
+			</tr>
+	    </volist>
+	</table>
+</center>
+</block>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/js/jquery.nicescroll.js"></script>
+<script>
+  
+</script>

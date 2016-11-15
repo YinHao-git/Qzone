@@ -1,0 +1,55 @@
+<extend name="Homepage/index" />
+
+<block name="main">
+
+
+<style>
+	a:hover{cursor: pointer;}
+</style>
+ <div class="banner">
+	<div class="container col-md-8 col-md-offset-2 mt50">
+		<table class="table table-hover"  width="400px" cellspacing="0" style="text-align: center;color:gray">
+		<tr>
+			<td><b>公告内容</b></td>
+			<td><b>发布时间</b></td>
+			<td><b>操作</b></td>
+		</tr>
+		<volist name="data" id="v">
+			<tr>
+				<td><b><{$v.content}></b></td>
+				<td><b><{$v.time}></b></td>
+				<td>
+					<button class="ck btn btn-info">查看</button>
+				</td>
+			</tr>
+			
+		</volist>
+	</table>
+	</div>
+		<div class="dc" style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index:2;position: absolute;display: none;"></div>
+		<div class="text" style="display: none;position: absolute;z-index: 4;bottom:100px;left:400px;width:500px;height: 500px">
+			<textarea name="" id="" cols="100" rows="20" style="resize:none;position: relative;z-index: 4;display: none"  readonly="readonly;"></textarea>
+		</div>
+		<script src="__PUBLIC__/home/js/jquery-2.1.4.min.js"></script>
+		<script>
+			$('.ck').click(function(){
+				// alert('dsdf');
+				var con = $(this).parent().prev().prev().children().html();
+
+				$('.dc').css('display','block');
+				$('.text textarea').html(con);
+				$('.text').css('display','block');
+				$('.text textarea').css('display','block');
+				
+			})
+			$('.dc').click(function(){
+				$('.dc').css('display','none');
+				$('.text').css('display','none');
+				$('.text textarea').css('display','block');
+			})
+	</script>
+</div>
+</block>
+
+<block name="out">
+</block>

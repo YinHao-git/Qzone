@@ -1,0 +1,6 @@
+[ 2016-11-15T18:11:04+08:00 ] 127.0.0.1 /kongchen/index.php/Home/Friend/index.html
+ERR: 无法加载控制器:Friend
+
+[ 2016-11-15T18:11:12+08:00 ] 127.0.0.1 /kongchen/index.php/Home/Friend/index.html
+ERR: 无法加载控制器:Friend
+

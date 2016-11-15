@@ -5,7 +5,6 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 mark, rp, rt, ruby, summary, time {
 	display: inline
 }
-/*li{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}*/
 /* Global properties ======================================================== */
 body {	
 	font-family: 'PT Serif Caption', serif;
@@ -107,7 +106,7 @@ h6 {
 
 .main {
 	margin: 0 auto;
-	/*position: relative;*/
+	position: relative;
 	width: 940px;}
 
 .overflow {overflow:hidden;}
@@ -123,29 +122,11 @@ header {
 }
 
 .line-top{
-	width:100%;
-	background:#f5d0dc;
-	/*background:url(../images/line-top.gif) repeat-x  0 0;*/
-    height:50px;
-    line-height:50px;
-    position:fixed;
-    z-index:10000;
-
-}
-.line-top ul{
-	float:right;
-}
-.line-top ul li{
-	float: left;
-	
-	width:100px;
-	text-align: center;
-	/*color:white;*/
-	/*overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*/
-	display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+	background:url(../images/line-top.gif) repeat-x  0 0;
+    height:7px;
 }
 
-.row-top{padding:71px 0 14px}
+.row-top{padding:21px 0 14px}
 /* Content */
 #content {
 	position:relative;

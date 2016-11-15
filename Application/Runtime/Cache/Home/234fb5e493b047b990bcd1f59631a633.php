@@ -85,15 +85,6 @@
   </div>
 
   
-  <div class="box-slider">
-    <div class="flexslider">
-      <ul class="slides">
-        <li> <img alt="" src="/kongchen/Public/homepage/images/slide-1.jpg"></li>
-        <li> <img alt="" src="/kongchen/Public/homepage/images/slide-2.jpg"></li>
-      </ul>
-    </div>
-  </div>
-  
   <div class="box-slogan">
     <h3><?php echo ($title); ?></h3>
   </div>
@@ -101,46 +92,52 @@
 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
 <!--==============================content=================================-->
 
-<section id="content">
-
-  <!-- <div class="border-horiz"></div> -->
-  <div class="container_12">
-    <article class="side-bar extra1">
-    </article>
-    <article class="grid_8">
-      <h3>好友动态</h3>
-      <ul class="list-recipes extra">
-        <li>
-          <p>昵称</p>
-          <div class="overflow">
-            <p>说说内容</p>
-            <p>发表时间</p>
-          </div>
-          <div class="clear"></div>
-        </li>
-        <hr>
-        <li>
-          <figure class="box-img"><img src="images/page5-img3.jpg " alt="" /></figure>
-          <div class="overflow">
-            <h4>Sam Dowson</h4>
-            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.</p>
-            <a href="#" class="btn">Read more</a> </div>
-          <div class="clear"></div>
-        </li>
-        <li>
-          <figure class="box-img"><img src="images/page5-img4.jpg " alt="" /></figure>
-          <div class="overflow">
-            <h4>Jane smart</h4>
-            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.</p>
-            <a href="#" class="btn">Read more</a> </div>
-          <div class="clear"></div>
-        </li>
-      </ul>
-    </article>
-    <div class="clear"></div>
-  </div>
-</section>
-</section>
+	 <div class="padd-1" style="margin-left:300px;">
+        <h3>我的好友</h3>
+     </div>
+		<div class="dropdown col-md-2" style="background:#abcdef;width:600px;height:160px;">
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+			   	<?php if(is_array($li)): $i = 0; $__LIST__ = $li;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$s): $mod = ($i % 2 );++$i;?><span>
+			   		<li >
+		                <a data-toggle="dropdown" href="#" style="font-size:28px;color:red;">新消息</a> <br>
+						昵称: <?php echo ($s["username"]); ?>&nbsp;&nbsp;<br/>
+						性别：<?php if($v["sex"] == '0'): ?>女
+			                    <?php else: ?>男<?php endif; ?>&nbsp;&nbsp;<br/>
+						<a class='btn btn-success' href="<?php echo U('Friend/yes',array('id'=>$s['id']));?>"> 同意</a>&nbsp;&nbsp;
+						<a class="btn btn-default" href="<?php echo U('Friend/no');?>">	 拒绝</a>
+			   		</li>
+		   		</span><?php endforeach; endif; else: echo "" ;endif; ?>
+	        </ul>
+		</div>
+	  <center>
+		<form action="<?php echo U('Friend/add');?>" met
+			hod="post">
+	     <div>
+	     	<input type="text" name="phone" placeholder="输入手机号" style="width:200px;height:30px">
+	     	<button style="width:100px;height:40px;background:#abcdef;cursor:pointer;">搜索好友</button>
+	     </div>
+	    </form>
+     <table class="table table-hover"  width="600px" cellspacing="0" style="text-align: center;color:gray">
+		<tr>
+			<td><b>好友昵称</b></td>
+			<td><b>好友性别</b></td>
+			<td><b>好友手机</b></td>
+			<td><b>删除好友</b></td>
+		</tr>
+		<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
+			<td><?php echo ($v["username"]); ?></td>
+			<td> 
+				<?php if($v["sex"] == '0'): ?>女
+                    <?php else: ?>男<?php endif; ?>
+            </td>
+			<td><?php echo ($v["phone"]); ?></td>
+			<td>
+                <input type="hidden" value="<?php echo ($v["id"]); ?>">
+                <a href="<?php echo U('del',array('id'=>$v['id']));?>" class="btn btn-danger" style="cursor:pointer;">点击删除</a>
+			</td>
+			</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	</table>
+</center>
 
 <!--==============================footer=================================-->
 <footer>

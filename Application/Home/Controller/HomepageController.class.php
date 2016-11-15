@@ -9,4 +9,11 @@ class HomepageController extends Controller
 	{
 		$this->display('Homepage/index');
 	}
+
+
+	public function out()
+	{
+		session(null);
+		$this->redirect('Home/Login/index');
+	}
 }

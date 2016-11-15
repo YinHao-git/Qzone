@@ -1,0 +1,219 @@
+<extend name="Homepage:index" />
+<block name="lunpo"></block>
+<block name='content'>
+  <style>
+    .face{
+      width:310px;
+      height:150px;
+      border:1px solid #ccc;
+    }
+    ul li{
+      float:left;
+    }
+    .banner{
+      margin-left: 250px;
+    }
+  </style>
+  <link href="__PUBLIC__/home/css/bootstrap.min.css" rel="stylesheet">
+  <section id="content">
+<div class="banner">
+  <div class="header">
+    <div class="hea">
+      <input class="in" type="hidden" value="<{$uid}>">
+      <h3>发表留言</h3>
+      <div class="message" contentEditable='true' name='message' style="width:940px;height:125px;border:1px solid #ccc"></div>
+      <div class="But">
+        <img src="__PUBLIC__/home/images/bba_thumb.gif" class='bq'/>
+        <span class='btn btn-success'>发表</span>
+        <!--face begin-->
+        <div class="face">
+          <ul>
+            <li><img src="__PUBLIC__/home/images/zz2_thumb.gif" title="[织]" ></li>
+            <li><img src="__PUBLIC__/home/images/horse2_thumb.gif" title="神马]"></li>
+            <li><img src="__PUBLIC__/home/images/fuyun_thumb.gif" title="[浮云]"></li>
+            <li><img src="__PUBLIC__/home/images/geili_thumb.gif" title="[给力]"></li>
+            <li><img src="__PUBLIC__/home/images/wg_thumb.gif" title="[围观]"></li>
+            <li><img src="__PUBLIC__/home/images/vw_thumb.gif" title="[威武]"></li>
+            <li><img src="__PUBLIC__/home/images/panda_thumb.gif" title="[熊猫]"></li>
+            <li><img src="__PUBLIC__/home/images/rabbit_thumb.gif" title="兔子]"></li>
+            <li><img src="__PUBLIC__/home/images/otm_thumb.gif" title="[奥特曼]"></li>
+            <li><img src="__PUBLIC__/home/images/j_thumb.gif" title="[囧]"></li>
+            <li><img src="__PUBLIC__/home/images/hufen_thumb.gif" title="[互粉]"></li>
+            <li><img src="__PUBLIC__/home/images/liwu_thumb.gif" title="[礼物]"></li>
+            <li><img src="__PUBLIC__/home/images/smilea_thumb.gif" title="呵呵]"></li>
+            <li><img src="__PUBLIC__/home/images/tootha_thumb.gif" title="嘻嘻]"></li>
+            <li><img src="__PUBLIC__/home/images/laugh.gif" title="[哈哈]"></li>
+            <li><img src="__PUBLIC__/home/images/tza_thumb.gif" title="[可爱]"></li>
+            <li><img src="__PUBLIC__/home/images/kl_thumb.gif" title="[可怜]"></li>
+            <li><img src="__PUBLIC__/home/images/kbsa_thumb.gif" title="[挖鼻屎]"></li>
+            <li><img src="__PUBLIC__/home/images/cj_thumb.gif" title="[吃惊]"></li>
+            <li><img src="__PUBLIC__/home/images/shamea_thumb.gif" title="[害羞]"></li>
+            <li><img src="__PUBLIC__/home/images/zy_thumb.gif" title="[挤眼]"></li>
+            <li><img src="__PUBLIC__/home/images/bz_thumb.gif" title="[闭嘴]"></li>
+            <li><img src="__PUBLIC__/home/images/bs2_thumb.gif" title="[鄙视]"></li>
+            <li><img src="__PUBLIC__/home/images/lovea_thumb.gif" title="[爱你]"></li>
+            <li><img src="__PUBLIC__/home/images/sada_thumb.gif" title="[泪]"></li>
+            <li><img src="__PUBLIC__/home/images/heia_thumb.gif" title="[偷笑]"></li>
+            <li><img src="__PUBLIC__/home/images/qq_thumb.gif" title="[亲亲]"></li>
+            <li><img src="__PUBLIC__/home/images/sb_thumb.gif" title="[生病]"></li>
+            <li><img src="__PUBLIC__/home/images/mb_thumb.gif" title="[太开心]"></li>
+            <li><img src="__PUBLIC__/home/images/ldln_thumb.gif" title="[懒得理你]"></li>
+            <li><img src="__PUBLIC__/home/images/yhh_thumb.gif" title="[右哼哼]"></li>
+            <li><img src="__PUBLIC__/home/images/zhh_thumb.gif" title="[左哼哼]"></li>
+            <li><img src="__PUBLIC__/home/images/x_thumb.gif" title="[嘘]"></li>
+            <li><img src="__PUBLIC__/home/images/cry.gif" title="[衰]"></li>
+            <li><img src="__PUBLIC__/home/images/wq_thumb.gif" title="[委屈]"></li>
+            <li><img src="__PUBLIC__/home/images/t_thumb.gif" title="[吐]"></li>
+            <li><img src="__PUBLIC__/home/images/k_thumb.gif" title="[打哈气]"></li>
+            <li><img src="__PUBLIC__/home/images/bba_thumb.gif" title="[抱抱]"></li>
+            <li><img src="__PUBLIC__/home/images/angrya_thumb.gif" title="[怒]"></li>
+            <li><img src="__PUBLIC__/home/images/yw_thumb.gif" title="[疑问]"></li>
+            <li><img src="__PUBLIC__/home/images/cza_thumb.gif" title="[馋嘴]"></li>
+            <li><img src="__PUBLIC__/home/images/88_thumb.gif" title="[拜拜]"></li>
+            <li><img src="__PUBLIC__/home/images/sk_thumb.gif" title="[思考]"></li>
+            <li><img src="__PUBLIC__/home/images/sweata_thumb.gif" title="[汗]"></li>
+            <li><img src="__PUBLIC__/home/images/sleepya_thumb.gif" title="[困]"></li>
+            <li><img src="__PUBLIC__/home/images/sleepa_thumb.gif" title="[睡觉]"></li>
+            <li><img src="__PUBLIC__/home/images/money_thumb.gif" title="[钱]"></li>
+            <li><img src="__PUBLIC__/home/images/sw_thumb.gif" title="[失望]"></li>
+            <li><img src="__PUBLIC__/home/images/cool_thumb.gif" title="[酷]"></li>
+            <li><img src="__PUBLIC__/home/images/hsa_thumb.gif" title="[花心]"></li>
+            <li><img src="__PUBLIC__/home/images/hatea_thumb.gif" title="[哼]"></li>
+            <li><img src="__PUBLIC__/home/images/gza_thumb.gif" title="[鼓掌]"></li>
+            <li><img src="__PUBLIC__/home/images/dizzya_thumb.gif" title="[晕]"></li>
+            <li><img src="__PUBLIC__/home/images/bs_thumb.gif" title="[悲伤]"></li>
+            <li><img src="__PUBLIC__/home/images/crazya_thumb.gif" title="[抓狂]"></li>
+            <li><img src="__PUBLIC__/home/images/h_thumb.gif" title="[黑线]"></li>
+            <li><img src="__PUBLIC__/home/images/yx_thumb.gif" title="[阴险]"></li>
+            <li><img src="__PUBLIC__/home/images/nm_thumb.gif" title="[怒骂]"></li>
+            <li><img src="__PUBLIC__/home/images/hearta_thumb.gif" title="[心]"></li>
+            <li><img src="__PUBLIC__/home/images/unheart.gif" title="[伤心]"></li>
+            <li><img src="__PUBLIC__/home/images/pig.gif" title="[猪头]"></li>
+            <li><img src="__PUBLIC__/home/images/ok_thumb.gif" title="[ok]"></li>
+            <li><img src="__PUBLIC__/home/images/ye_thumb.gif" title="[耶]"></li>
+            <li><img src="__PUBLIC__/home/images/good_thumb.gif" title="[good]"></li>
+            <li><img src="__PUBLIC__/home/images/no_thumb.gif" title="[不要]"></li>
+            <li><img src="__PUBLIC__/home/images/z2_thumb.gif" title="[赞]"></li>
+            <li><img src="__PUBLIC__/home/images/come_thumb.gif" title="[来]"></li>
+            <li><img src="__PUBLIC__/home/images/sad_thumb.gif" title="[弱]"></li>
+            <li><img src="__PUBLIC__/home/images/lazu_thumb.gif" title="[蜡烛]"></li>
+            <li><img src="__PUBLIC__/home/images/clock_thumb.gif" title="[钟]"></li>
+            <li><img src="__PUBLIC__/home/images/cake.gif" title="[蛋糕]"></li>
+            <li><img src="__PUBLIC__/home/images/m_thumb.gif" title="[话筒]"></li>
+            <li><img src="__PUBLIC__/home/images/weijin_thumb.gif" title="[围脖]"></li>
+            <li><img src="__PUBLIC__/home/images/lxhzhuanfa_thumb.gif" title="[转发]"></li>
+            <li><img src="__PUBLIC__/home/images/lxhluguo_thumb.gif" title="[路过这儿]"></li>
+            <li><img src="__PUBLIC__/home/images/bofubianlian_thumb.gif" title="[bofu变脸]"></li>
+            <li><img src="__PUBLIC__/home/images/gbzkun_thumb.gif" title="[gbz困]"></li>
+            <li><img src="__PUBLIC__/home/images/boboshengmenqi_thumb.gif" title="[生闷气]"></li>
+            <li><img src="__PUBLIC__/home/images/chn_buyaoya_thumb.gif" title="[不要啊]"></li>
+            <li><img src="__PUBLIC__/home/images/daxiongleibenxiong_thumb.gif" title="[dx泪奔]"></li>
+            <li><img src="__PUBLIC__/home/images/cat_yunqizhong_thumb.gif" title="[运气中]"></li>
+            <li><img src="__PUBLIC__/home/images/youqian_thumb.gif" title="[有钱]"></li>
+            <li><img src="__PUBLIC__/home/images/cf_thumb.gif" title="[冲锋]"></li>
+            <li><img src="__PUBLIC__/home/images/camera_thumb.gif" title="[照相机]"></li>
+          </ul>
+        </div><!--face end-->
+      </div><!--end but-->
+    </div><!--end hea-->
+    <div id="time1"></div>
+    <div id="hidd">
+    <div class="msgCon">
+    <volist name="list" id="v">
+      <div class='msgBox'>
+      <dl><dt><img src='__PUBLIC__/uploads/<{$v.photo}>' width='50' height='50'/></dt><dd><{$v.username}></dd><dd class="del btn" style="text-align: right;width:50px;height:20px"><input class="put" type="hidden" value="<{$v.id}>">删除</dd></dl>
+        <div class='msgTxt'>
+          <{$v.content}>
+          <dd style="text-align: right"><{$v.time|date='Y-m-d',###}></dd>
+        </div>
+      </div>
+      </volist>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/javascript" src="__PUBLIC__/home/js/jquery-1.10.2.min.js"></script>
+    <script src="__PUBLIC__/home/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/home/js/jquery.nicescroll.js"></script>
+    <script type="text/javascript">
+      //滚动条插件
+      $('#hidd').niceScroll({
+          cursorcolor: "#f90",//#CC0071 光标颜色
+          cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+          touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+          cursorwidth: "5px", //像素光标的宽度
+          cursorborder: "0", //     游标边框css定义
+          cursorborderradius: "5px",//以像素为光标边界半径
+          autohidemode: false //是否隐藏滚动条
+       });
+
+
+      //点击小图片，显示表情
+      $(".bq").click(function(e){
+        $(".face").slideDown();//慢慢向下展开
+        e.stopPropagation();   //阻止冒泡事件
+      });
+
+      //在桌面任意地方点击，他是关闭
+      $(document).click(function(){
+        $(".face").slideUp();//慢慢向上收
+      });
+
+      //点击小图标时，添加功能
+      $(".face ul li").click(function(){
+        var simg=$(this).find("img").clone();
+        $(".message").append(simg);
+      });
+
+      //点击发表按扭，发表内容
+      $("span").click(function(){
+        var txt=$(".message").html();
+        var uid=$('.in').val();
+        console.log(uid);
+        if(txt==""){
+          $('.message').focus();//自动获取焦点
+          return;
+        }
+        $.ajax({
+          type:'POST',
+          data:'content='+txt+'&id='+uid,
+          url:"<{:U('Message/add')}>",
+          success:function(datas){
+            $(".msgCon").prepend("<div class='msgBox'><dl><dt><img src='__PUBLIC__/uploads/"+datas[0].photo+"' width='50' height='50'/></dt><dd>"+datas[0].username+"</dd></dl><div class='msgTxt'>"+txt+"<dd style='text-align: right'>刚刚</dd></div></div>");
+            }
+        })
+
+        $(".message").html(null);
+      });
+
+      $(".del").click(function(){
+        var id = $('.put').val();
+        var _this = $(this);
+        $.ajax({
+          type:'GET',
+          data:'id='+id,
+          url:"<{:U('Message/del')}>",
+          success:function(da){
+            if (da == 0) {
+              alert('你没有权限删除');
+            }else if(da == 1){
+              alert('删除成功');
+              _this.closest('.msgBox').remove();
+            }else{
+              alert('删除失败');
+            }
+          }
+        })
+      })
+
+    </script>
+
+  </div><!--end header-->
+</div><!--end banner-->
+
+</block>
+<block name="out">
+</block>
