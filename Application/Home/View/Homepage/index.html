@@ -145,13 +145,23 @@
 <!--==============================footer=================================-->
 <footer>
   <div class="main">
-    <ul class="soc-list">
+   <!--  <ul class="soc-list">
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-1.png"></a></li>
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-2.png"></a></li>
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-3.png"></a></li>
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-4.png"></a></li>
+    </ul> -->
+    <!-- <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div> -->
+    <foreach name="linklist" item="vo" >
+    <ul class="link">
+      <li><a href="<{$vo.linkaddress}>"><{$vo.linkname}>&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+      
     </ul>
-    <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div>
+    
+    </script>
+    </foreach>
+    <center><p class="linkm">Copyright © 2005 - 2016 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml">All Rights Reserved.</a></p></center>
+    <center>ykz Company<center>
     <div class="clear"></div>
   </div>
 </footer>

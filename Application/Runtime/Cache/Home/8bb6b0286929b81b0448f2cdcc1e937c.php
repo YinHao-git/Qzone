@@ -7,13 +7,13 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="/kongchen/Public/home/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/kongchen/Public/home/my.css" rel="stylesheet">
+    <link href="/qzone15/Public/home/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/qzone15/Public/home/my.css" rel="stylesheet">
     
 
   </head>
 
-  <body style="background:url('/kongchen/Public/home/dis/images/1.jpg');">
+  <body style="background:url('/qzone15/Public/home/dis/images/1.jpg');">
     <div class="col-md-3" style="left:700px;top:150px;style=width:250px;border:1px solid #999;background:white;">
       <form role="form" action="<?php echo U('Register/insert');?>" method="post">
         <center><h1>空间注册</h1></center>
@@ -60,10 +60,10 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/kongchen/Public/home/js/jquery.min.js"></script>
-    <script src="/kongchen/Public/home/js/holder.min.js"></script>
+    <script src="/qzone15/Public/home/js/jquery.min.js"></script>
+    <script src="/qzone15/Public/home/js/holder.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/kongchen/Public/home/js/bootstrap.min.js"></script>
+    <script src="/qzone15/Public/home/js/bootstrap.min.js"></script>
   </body>
 </html>

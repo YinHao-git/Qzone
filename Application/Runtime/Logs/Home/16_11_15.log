@@ -4,3 +4,38 @@ ERR: 无法加载控制器:Friend
 [ 2016-11-15T18:11:12+08:00 ] 127.0.0.1 /kongchen/index.php/Home/Friend/index.html
 ERR: 无法加载控制器:Friend
 
+[ 2016-11-15T19:16:34+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Register/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'status' doesn't have a default value
+
+[ 2016-11-15T19:20:18+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Register/insert.html
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'status' doesn't have a default value
+
+[ 2016-11-15T19:24:28+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Leave/index-2.html
+ERR: 模板不存在:./Application/Home/View/Empty/404.html
+
+[ 2016-11-15T21:20:25+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Friend/index.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qzone.qzone_apply' doesn't exist
+
+[ 2016-11-15T21:20:31+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Leave/index-2.html
+ERR: 模板不存在:./Application/Home/View/Empty/404.html
+
+[ 2016-11-15T21:22:17+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Personal/index.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+
+[ 2016-11-15T21:22:24+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Personal/index.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+
+[ 2016-11-15T21:24:36+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Personal/index.html
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+
+[ 2016-11-15T21:36:15+08:00 ] 127.0.0.1 /qzone15/index.php/Home/LO
+ERR: 无法加载控制器:LO
+
+[ 2016-11-15T22:34:37+08:00 ] 127.0.0.1 /qzone15/index.php/Home/Note/insert.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [2] Declaration of Home\Controller\NoteController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\wamp\www\qzone15\Application\Home\Controller\NoteController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `qzone_talk` [ RunTime:0.1720s ]
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'uid' doesn't have a default value
+

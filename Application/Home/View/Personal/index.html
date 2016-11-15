@@ -2,78 +2,97 @@
 <block name="lunpo"></block>
 
 <block name="content">
-	<section id="content"><div class="ic"></div>
+  <section id="content"><div class="ic"></div>
   <div class="border-horiz"></div>
+ 
   <div class="box-contact">
     <h3>个人档 <a href="<{:U('Personal/edit')}>" style="color:blue;font-size:20px;float:right;">修改</a></h3>
     <form id="contact-form">
+      <!-- <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div> -->
       <fieldset>
         <div class="coll-1">
         <table class="table">
+          <foreach name="list" item="vo">
           <tr>
-            <th><img src="__PUBLIC__/photos/touxiang/default.jpg" width=50 height=50 alt=""></th>
+            <th><img src="__PUBLIC__/photos/touxiang/<{$vo.photo}>" width=50 height=50 alt=""></th>
           </tr>
+          
           <tr>
             <th>真实姓名:</th>
-            <td>zengzhen</td>
+            <td>
+              <if condition="$vo.name eq ''">未填写
+              <else /><{$vo.name}>
+              </if>
+              
+            </td>
           </tr>
           <tr>
             <th>性别:</th>
-            <td>女</td>
+            <td>
+              <if condition="$vo.sex eq ''">未填写
+              <elseif condition="$vo.sex eq '0'" />女
+              <elseif condition="$vo.sex eq '1'" />男
+              <else />保密
+              </if>
+              
+            </td>
           </tr>
           <tr>
             <th>手机号码:</th>
-            <td>17715148026</td>
+            <td>
+              <if condition="$vo.phone eq ''">未填写
+              <else /><{$vo.phone}>
+              </if>
+              
+            </td>
           </tr>
           <tr>
             <th>生日:</th>
-            <td>十月十六</td>
+            <td>
+              <if condition="$vo.birth eq ''">未填写
+              <else /><{$vo.birth}>
+              </if>
+              
+            </td>
           </tr>
           <tr>
             <th>星座:</th>
-            <td>摩羯座</td>
+            <td>
+              <if condition="$vo.star eq ''">未填写
+              <else /><{$vo.star}>
+              </if>
+              
+            </td>
           </tr>
           <tr>
             <th>现居地:</th>
-            <td>中国 江苏 泰州</td>
+            <td>
+              <if condition="$vo.place eq ''">未填写
+              <else /><{$vo.place}>
+              </if>
+              
+            </td>
           </tr>
           <tr>
             <th>民族:</th>
-            <td>汉</td>
+            <td>
+              <if condition="$vo.race eq ''">未填写
+              <else /><{$vo.race}>
+              </if>
+              
+            </td>
           </tr>
+        </foreach>
         </table>
       </div>
-        <!-- <div class="coll-1">
-          <div>
-            <div class="form-txt">真实姓名:</div>
-            <label class="name">
-
-              <input type="text">
-              <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
-            <div class="clear"></div>
-          </div>
-          <div>
-            <div class="form-txt">Telephone:</div>
-            <label class="phone">
-              <input type="tel">
-              <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
-            <div class="clear"></div>
-          </div>
-          <div>
-            <div class="form-txt">Email:</div>
-            <label class="email">
-              <input type="email">
-              <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span> </label>
-            <div class="clear"></div>
-          </div>
-        </div> -->
+        
         <div class="coll-2">
           <div>
             <div class="form-txt">Information:</div>
              <label class="message">
               <ul>
                 <li><a href="" style="color:black;">日志</a></li><span>0</span>
-                <li><a href="" style="color:black;">相册</a></li><span>367</span>
+                <li><a href="<{:U('Photo/index')}>" style="color:black;">相册</a></li><span>367</span>
                 <li><a href="" style="color:black;">说说</a></li><span>16</span>
               </ul>
              <!-- <textarea></textarea>

@@ -6,6 +6,9 @@
 	{
 		public function index()
 		{
+			$llinklist=M('llink')->select();
+			// dump($llinklist);exit;
+			$this->assign('llinklist',$llinklist);
 			$this->display('Login/index');
 		}
 
@@ -31,7 +34,7 @@
 				 //执行登录
 	            if($data) {
 	               session('phone',$phone);
-	               session('id',"$id");
+	               session('id',$id);
 	               session('username',"$username");
 		           $this->success('登录成功!', U('Homepage/index'));
 		        } else {

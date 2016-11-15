@@ -4,22 +4,22 @@
 <title>Home</title>
 <meta charset="utf-8">
 <!--css-->
-<link rel="stylesheet" href="/kongchen/Public/homepage/css/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/kongchen/Public/homepage/css/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/kongchen/Public/homepage/css/grid.css" type="text/css" media="screen">
-<link rel="icon" href="/kongchen/Public/homepage/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/kongchen/Public/homepage/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/qzone15/Public/homepage/css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone15/Public/homepage/css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone15/Public/homepage/css/grid.css" type="text/css" media="screen">
+<link rel="icon" href="/qzone15/Public/homepage/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/qzone15/Public/homepage/images/favicon.ico" type="image/x-icon" />
 <!-- <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'> -->
-<link rel="stylesheet" href="/kongchen/Public/homepage/css/flexslider.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/kongchen/Public/my.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone15/Public/homepage/css/flexslider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone15/Public/my.css" type="text/css" media="screen">
 
 <!-- Bootstrap -->
-   <!--  <link href="/kongchen/Public/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+   <!--  <link href="/qzone15/Public/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <!--js-->
-<script type="text/javascript" src="/kongchen/Public/homepage/js/jquery-1.7.1.min.js" ></script>
-<script type="text/javascript" src="/kongchen/Public/homepage/js/superfish.js"></script>
-<script type="text/javascript" src="/kongchen/Public/homepage/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/qzone15/Public/homepage/js/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="/qzone15/Public/homepage/js/superfish.js"></script>
+<script type="text/javascript" src="/qzone15/Public/homepage/js/jquery.flexslider-min.js"></script>
 
 <script>	
 			jQuery(window).load(function() {								
@@ -36,7 +36,7 @@
 	</script>
   <style>
    body{
-      background-image: url('/kongchen/Public/home/dis/images/11.jpg');
+      background-image: url('/qzone15/Public/home/dis/images/11.jpg');
     }
 
   </style>
@@ -48,7 +48,7 @@
 <header>
   <div class="line-top">
     <ul class="mr200">
-      <!-- <li><h1><img alt="" src="/kongchen/Public/photos/touxiang/default.jpg" width=35 height=35>&nbsp;&nbsp;&nbsp;&nbsp;GNEZGNEZ </h1></li> -->
+      <!-- <li><h1><img alt="" src="/qzone15/Public/photos/touxiang/default.jpg" width=35 height=35>&nbsp;&nbsp;&nbsp;&nbsp;GNEZGNEZ </h1></li> -->
       <li><a href="">[充值]</a></li>
 
       <li><a href="<?php echo U('Homepage/out');?>">[退出]</a></li>
@@ -58,7 +58,7 @@
   <div class="main">
     <div class="row-top">
       <!-- <div style="height:40px;width:200px;"> -->
-      <h1 style="height:80px;"><img alt="" src="/kongchen/Public/photos/touxiang/default.jpg" width=80 height=80>&nbsp;&nbsp;&nbsp;&nbsp;<ul class="fr"><li style="width:155px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></li>
+      <h1 style="height:80px;"><img alt="" src="/qzone15/Public/photos/touxiang/default.jpg" width=80 height=80>&nbsp;&nbsp;&nbsp;&nbsp;<ul class="fr"><li style="width:155px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></li>
         </ul> </h1>
       <nav>
         <ul class="sf-menu">
@@ -88,8 +88,8 @@
   <div class="box-slider">
     <div class="flexslider">
       <ul class="slides">
-        <li> <img alt="" src="/kongchen/Public/homepage/images/slide-1.jpg"></li>
-        <li> <img alt="" src="/kongchen/Public/homepage/images/slide-2.jpg"></li>
+        <li> <img alt="" src="/qzone15/Public/homepage/images/slide-1.jpg"></li>
+        <li> <img alt="" src="/qzone15/Public/homepage/images/slide-2.jpg"></li>
       </ul>
     </div>
   </div>
@@ -145,13 +145,21 @@
 <!--==============================footer=================================-->
 <footer>
   <div class="main">
-    <ul class="soc-list">
-      <li><a href="#"><img alt="" src="/kongchen/Public/homepage/images/icon-1.png"></a></li>
-      <li><a href="#"><img alt="" src="/kongchen/Public/homepage/images/icon-2.png"></a></li>
-      <li><a href="#"><img alt="" src="/kongchen/Public/homepage/images/icon-3.png"></a></li>
-      <li><a href="#"><img alt="" src="/kongchen/Public/homepage/images/icon-4.png"></a></li>
+   <!--  <ul class="soc-list">
+      <li><a href="#"><img alt="" src="/qzone15/Public/homepage/images/icon-1.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone15/Public/homepage/images/icon-2.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone15/Public/homepage/images/icon-3.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone15/Public/homepage/images/icon-4.png"></a></li>
+    </ul> -->
+    <!-- <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div> -->
+    <?php if(is_array($linklist)): foreach($linklist as $key=>$vo): ?><ul class="link">
+      <li><a href="<?php echo ($vo["linkaddress"]); ?>"><?php echo ($vo["linkname"]); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
+      
     </ul>
-    <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div>
+    
+    </script><?php endforeach; endif; ?>
+    <center><p class="linkm">Copyright © 2005 - 2016 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml">All Rights Reserved.</a></p></center>
+    <center>ykz Company<center>
     <div class="clear"></div>
   </div>
 </footer>

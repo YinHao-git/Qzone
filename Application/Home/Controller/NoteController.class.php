@@ -6,13 +6,19 @@
 	{
 		public function index()
 		{
+			//友情链接
+			$linklist=M('link')->select();
+			// dump($linklist);
+			$this->assign('linklist',$linklist);
+
 			$phone=session('phone');
 			if(empty($phone)){
               $this->error('请登录',U('Login/index'));
             }
 			$data = M('talk')->order('id desc')->select();
 		    $this->assign('data',$data);
-		    $this->display();
+		    // $this->display();
+		    $this->display('Note/index');
 		}
 
 		// 添加说说

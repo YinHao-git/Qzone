@@ -4,6 +4,10 @@ use Think\Controller;
 class IndexController extends Controller 
 {
     public function index(){
-        $this->display();
+    	//友情链接
+		$linklist=M('link')->select();
+		// dump($linklist);
+		$this->assign('linklist',$linklist);
+		$this->display('Index/index');
     }
 }

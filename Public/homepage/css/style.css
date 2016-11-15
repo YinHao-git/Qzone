@@ -14,11 +14,27 @@ body {
 	color:#343434;
 	min-width:1020px;
 	background:url(../images/bg-body.gif) #e6e4d7;
-	text-transform:uppercase
+	/*text-transform:uppercase*/
 }
 html, body {
 	height:100%;
 }
+
+.link li{
+	float: left;
+	
+	text-align: center;
+}
+.link li a:hover{
+	color:black;
+}
+.link a{
+	color:#999;
+}
+.linkm a{
+	color:#999;
+}
+
 .ic {
 	border:0;
 	float:right;
@@ -484,7 +500,7 @@ background:#fff;
 #contact-form textarea {
   font-family: 'PT Serif Caption', serif;
   padding: 4px 12px 5px;
-  text-transform:uppercase;
+  /*text-transform:uppercase;*/
   margin: 0;
   font-size:14px;
   display: block;

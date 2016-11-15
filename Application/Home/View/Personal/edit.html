@@ -7,30 +7,30 @@
  
   <div class="box-contact">
     <h3>个人档 </h3>
-    <form id="contact-form">
+    <form id="contact-form" action="<{:U('Personal/save')}>" method="post">
       <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
       <fieldset>
-      <form action="<{:U('Personal/edit')}>" method="post">
+      <foreach name="list" item="vo">
         <div class="coll-1">
           <div>
             <div class="form-txt">昵称:</div>
             <label class="name">
               <!-- 长度限制 -->
-              <input type="text" name="username">
+              <input type="text" name="username" value="<{$vo.username}>">
               <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label> -->
             <div class="clear"></div>
           </div>
           <div>
             <div class="form-txt">真实姓名:</div>
             <label class="name">
-              <input type="text" name="name">
+              <input type="text" name="name" value="<{$vo.name}>">
               <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> --></label> 
             <div class="clear"></div>
           </div>
           <div>
             <div class="form-txt">电话号码:</div>
             <label class="phone">
-              <input type="tel" name="phone">
+              <input type="tel" name="phone" value="<{$vo.phone}>">
               <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
             <div class="clear"></div>
           </div>
@@ -39,8 +39,8 @@
             <!-- <label class="email"> -->
            
               <select name="" id="" style="width:50px;">
-                <option value="0">女</option>
-                <option value="1">男</option>
+                <option value="0" <if condition="$vo.sex eq '0'">selected</if>>女</option>
+                <option value="1" <if condition="$vo.sex eq '1'">selected</if>>男</option>
               </select>
               <!-- <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span>  -->
             <!-- </label> -->
@@ -49,15 +49,29 @@
           </div>
           <div>
             <div class="form-text">出生年月</div>
-            <select name="" id="">
-              <option value="0">1995</option>
+            <select name="birth_y" id="">
+            <foreach name="year" item="y">  
+              <option <if condition="$y.year eq $biry">selected</if>><{$y.year}></option>
+            </foreach>  
             </select>
-            <select name="" id="">
-              <option value="0">10</option>
+
+            <select name="birth_m" id="mon">
+             
             </select>
-            <select name="" id="">
-              <option value="0">16</option>
+            <script>
+                for(var i=1;i<=12;i++){
+                  mon.add(new Option(i,i));
+                }    
+            </script>
+
+            <select name="birth_d" id="date">
             </select>
+            <script>
+                for(var i=1;i<=31;i++){
+                  date.add(new Option(i,i));
+                }    
+            </script>
+
             <br><br>
             <div class="clear"></div>
           </div>
@@ -75,12 +89,12 @@
           <div>
             <div class="form-txt">民族:</div>
             <label class="name">
-              <input type="text" name="name">
+              <input type="text" name="race" value="<{$vo.race}>">
               <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label> -->
             <div class="clear"></div>
           </div>
         </div>
-      </form>
+     
 
         <div class="coll-2">
           <div>
@@ -92,8 +106,9 @@
             <div class="clear"></div>
           </div>
         </div>
+      </foreach>
         <div class="clear"></div>
-        <div class="btns"> <a class="btn" href="<{:U('Personal/index')}>">保存</a><!--  <a class="btn" data-type="submit">send</a> --> </div>
+        <div class="btns"> <button class="btn" >保存</button><!--  <a class="btn" data-type="submit">send</a> --> </div>
       </fieldset>
     </form>
   </div>

@@ -6,7 +6,7 @@ http-equiv="X-UA-Compatible">
  
 <META http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 <TITLE>登录页面</TITLE> 
-<SCRIPT src="/qzone/Public/Login/js/jquery-1.9.1.min.js" type="text/javascript"></SCRIPT>
+<SCRIPT src="/qzone15/Public/Login/js/jquery-1.9.1.min.js" type="text/javascript"></SCRIPT>
  
 <STYLE>
 body{
@@ -40,7 +40,7 @@ body{
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 .u_logo{
-	background: url("/qzone/Public/Login/images/username.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/username.png") no-repeat;
 	padding: 10px 10px;
 	position: absolute;
 	top: 43px;
@@ -48,7 +48,7 @@ body{
 
 }
 .p_logo{
-	background: url("/qzone/Public/Login/images/password.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/password.png") no-repeat;
 	padding: 10px 10px;
 	position: absolute;
 	top: 12px;
@@ -58,7 +58,7 @@ a{
 	text-decoration: none;
 }
 .tou{
-	background: url("/qzone/Public/Login/images/tou.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/tou.png") no-repeat;
 	width: 97px;
 	height: 92px;
 	position: absolute;
@@ -66,7 +66,7 @@ a{
 	left: 140px;
 }
 .left_hand{
-	background: url("/qzone/Public/Login/images/left_hand.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/left_hand.png") no-repeat;
 	width: 32px;
 	height: 37px;
 	position: absolute;
@@ -74,7 +74,7 @@ a{
 	left: 150px;
 }
 .right_hand{
-	background: url("/qzone/Public/Login/images/right_hand.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/right_hand.png") no-repeat;
 	width: 32px;
 	height: 37px;
 	position: absolute;
@@ -82,7 +82,7 @@ a{
 	right: -64px;
 }
 .initial_left_hand{
-	background: url("/qzone/Public/Login/images/hand.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/hand.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -90,7 +90,7 @@ a{
 	left: 100px;
 }
 .initial_right_hand{
-	background: url("/qzone/Public/Login/images/hand.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/hand.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -98,7 +98,7 @@ a{
 	right: -112px;
 }
 .left_handing{
-	background: url("/qzone/Public/Login/images/left-handing.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/left-handing.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
@@ -106,7 +106,7 @@ a{
 	left: 139px;
 }
 .right_handinging{
-	background: url("/qzone/Public/Login/images/right_handing.png") no-repeat;
+	background: url("/qzone15/Public/Login/images/right_handing.png") no-repeat;
 	width: 30px;
 	height: 20px;
 	position: absolute;
