@@ -8,8 +8,8 @@
 		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- basic styles -->
-		<link href="/xm/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="/xm/Public/assets/css/font-awesome.min.css" />
+		<link href="/qzone16/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/font-awesome.min.css" />
 
 		<!--[if IE 7]>
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
@@ -19,13 +19,13 @@
 
 		<!-- fonts -->
 
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+		<link rel="stylesheet" href="#" />
 
 		<!-- ace styles -->
 
-		<link rel="stylesheet" href="/xm/Public/assets/css/ace.min.css" />
-		<link rel="stylesheet" href="/xm/Public/assets/css/ace-rtl.min.css" />
-		<link rel="stylesheet" href="/xm/Public/assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/ace-skins.min.css" />
 
 		<!--[if lte IE 8]>
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
@@ -35,7 +35,7 @@
 
 		<!-- ace settings handler -->
 
-		<script src="/xm/Public/assets/js/ace-extra.min.js"></script>
+		<script src="/qzone16/Public/assets/js/ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -216,7 +216,7 @@
 
 								<li>
 									<a href="#">
-										<img src="/xm/Public/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+										<img src="/qzone16/Public/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Alex:</span>
@@ -233,7 +233,7 @@
 
 								<li>
 									<a href="#">
-										<img src="/xm/Publicassets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+										<img src="/qzone16/Publicassets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Susan:</span>
@@ -250,7 +250,7 @@
 
 								<li>
 									<a href="#">
-										<img src="/xm/Public/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+										<img src="/qzone16/Public/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Bob:</span>
@@ -276,7 +276,7 @@
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/xm/Public/assets/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="/qzone16/Public/assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
 									<?php echo session('AdminName');?>
@@ -332,21 +332,30 @@
 					<ul class="nav nav-list">
 						<li class="active">
 							<a href="<?php echo U('Admin/index');?>">
-								<i class="icon-dashboard"></i>
+								<i class="icon-list"></i>
 								<span class="menu-text">后台用户管理</span>
 							</a>
 						</li>
 
 						<li>
-							<a href="<?php echo U('Userh/index');?>">
-								<i class="icon-text-width"></i>
+							<a href="<?php echo U('Userh/index');?>" class="dropdown-toggle">
+								<i class="icon-list"></i>
 								<span class="menu-text">前台用户管理</span>
+							</a>
+
+							
+						</li>
+
+						<li>
+							<a href="<?php echo U('Userh/getInfo');?>" class="dropdown-toggle">
+								<i class="icon-list"></i>
+								<span class="menu-text">前台用户详细信息</span>
 							</a>
 						</li>
 
 						<li>
 							<a href="#" class="dropdown-toggle">
-								<i class="icon-desktop"></i>
+								<i class="icon-list"></i>
 								<span class="menu-text">前台用户数据管理</span>
 
 								<b class="arrow icon-angle-down"></b>
@@ -384,10 +393,19 @@
 						</li>
 						
 						<li>
-							<a href="widgets.html">
-								<i class="icon-list-alt"></i>
-								<span class="menu-text">用户相册管理</span>
+							<a href="widgets.html" class="dropdown-toggle">
+								<i class="icon-list"></i>
+								<span class="menu-text">用户相册</span>
+								<b class="arrow icon-angle-down"></b>
 							</a>
+							<ul class="submenu">
+								<li>
+									<a href="tables.html">
+										<i class="icon-double-angle-right"></i>
+										用户相册管理
+									</a>
+								</li>
+							</ul>
 						</li>
 
 					
@@ -412,7 +430,7 @@
 
 						<li>
 							<a href="#" class="dropdown-toggle">
-								<i class="icon-edit"></i>
+								<i class="icon-list"></i>
 								<span class="menu-text">网站管理</span>
 
 								<b class="arrow icon-angle-down"></b>
@@ -450,69 +468,26 @@
 							</ul>
 						</li>
 
-						
-
-						<li>
-							<a href="calendar.html">
-								<i class="icon-calendar"></i>
-
-								<span class="menu-text">
-									日历
-									<span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
-										<i class="icon-warning-sign red bigger-130"></i>
-									</span>
-								</span>
-							</a>
-						</li>
-
 						<li>
 							<a href="#" class="dropdown-toggle">
-								<i class="icon-tag"></i>
-								<span class="menu-text"> 更多页面 </span>
+								<i class="icon-list"></i>
+								<span class="menu-text">角色管理</span>
 
 								<b class="arrow icon-angle-down"></b>
 							</a>
 
 							<ul class="submenu">
 								<li>
-									<a href="profile.html">
+									<a href="">
 										<i class="icon-double-angle-right"></i>
-										用户信息
+										角色列表
 									</a>
 								</li>
 
 								<li>
-									<a href="inbox.html">
+									<a href="">
 										<i class="icon-double-angle-right"></i>
-										收件箱
-									</a>
-								</li>
-
-								<li>
-									<a href="pricing.html">
-										<i class="icon-double-angle-right"></i>
-										售价单
-									</a>
-								</li>
-
-								<li>
-									<a href="invoice.html">
-										<i class="icon-double-angle-right"></i>
-										购物车
-									</a>
-								</li>
-
-								<li>
-									<a href="timeline.html">
-										<i class="icon-double-angle-right"></i>
-										时间轴
-									</a>
-								</li>
-
-								<li>
-									<a href="login.html">
-										<i class="icon-double-angle-right"></i>
-										登录 &amp; 注册
+										添加角色
 									</a>
 								</li>
 							</ul>
@@ -520,10 +495,10 @@
 
 						<li>
 							<a href="#" class="dropdown-toggle">
-								<i class="icon-file-alt"></i>
+								<i class="icon-list"></i>
 
 								<span class="menu-text">
-									其他页面
+									节点管理
 									<span class="badge badge-primary ">5</span>
 								</span>
 
@@ -532,12 +507,18 @@
 
 							<ul class="submenu">
 								<li>
-									<a href="faq.html">
+									<a href="">
 										<i class="icon-double-angle-right"></i>
-										帮助
+										节点列表
 									</a>
 								</li>
 
+								<li>
+									<a href="">
+										<i class="icon-double-angle-right"></i>
+										节点添加
+									</a>
+								</li>
 								<li>
 									<a href="error-404.html">
 										<i class="icon-double-angle-right"></i>
@@ -552,12 +533,6 @@
 									</a>
 								</li>
 
-								<li>
-									<a href="grid.html">
-										<i class="icon-double-angle-right"></i>
-										网格
-									</a>
-								</li>
 
 								<li>
 									<a href="blank.html">
@@ -693,7 +668,7 @@
 
 		<!--[if !IE]> -->
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<!-- // <script src="#"></script> -->
 
 		<!-- <![endif]-->
 
@@ -704,7 +679,7 @@
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='/xm/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+			window.jQuery || document.write("<script src='/qzone16/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 		</script>
 
 		<!-- <![endif]-->
@@ -716,10 +691,10 @@
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='/xm/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+			if("ontouchend" in document) document.write("<script src='/qzone16/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 		</script>
-		<script src="/xm/Public/assets/js/bootstrap.min.js"></script>
-		<script src="/xm/Public/assets/js/typeahead-bs2.min.js"></script>
+		<script src="/qzone16/Public/assets/js/bootstrap.min.js"></script>
+		<script src="/qzone16/Public/assets/js/typeahead-bs2.min.js"></script>
 
 		<!-- page specific plugin scripts -->
 
@@ -727,19 +702,19 @@
 		  <script src="assets/js/excanvas.min.js"></script>
 		<![endif]-->
 
-		<script src="/xm/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="/xm/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
-		<script src="/xm/Public/assets/js/jquery.slimscroll.min.js"></script>
-		<script src="/xm/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
-		<script src="/xm/Public/assets/js/jquery.sparkline.min.js"></script>
-		<script src="/xm/Public/assets/js/flot/jquery.flot.min.js"></script>
-		<script src="/xm/Public/assets/js/flot/jquery.flot.pie.min.js"></script>
-		<script src="/xm/Public/assets/js/flot/jquery.flot.resize.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.slimscroll.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.sparkline.min.js"></script>
+		<script src="/qzone16/Public/assets/js/flot/jquery.flot.min.js"></script>
+		<script src="/qzone16/Public/assets/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="/qzone16/Public/assets/js/flot/jquery.flot.resize.min.js"></script>
 
 		<!-- ace scripts -->
 
-		<script src="/xm/Public/assets/js/ace-elements.min.js"></script>
-		<script src="/xm/Public/assets/js/ace.min.js"></script>
+		<script src="/qzone16/Public/assets/js/ace-elements.min.js"></script>
+		<script src="/qzone16/Public/assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 
@@ -938,6 +913,6 @@
 			
 			})
 		</script>
-	<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+	<div style="display:none"><script src='#' language='JavaScript' charset='gb2312'></script></div>
 </body>
 </html>

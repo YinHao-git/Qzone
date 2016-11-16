@@ -16,7 +16,7 @@ Released   : 20100308
 <title><?php echo ($title); ?></title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
-<link href="/qzone15/Public/home/css/diary.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/qzone16/Public/home/css/diary.css" rel="stylesheet" type="text/css" media="screen" />
 
 </head>
 <body>
@@ -64,8 +64,8 @@ Released   : 20100308
 		<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
 	</div>
 	<!-- end #footer -->
-	<script src='/qzone15/Public/home/js/jquery-1.10.2.min.js'></script>
-	<script type="text/javascript" src="/qzone15/Public/home/js/jquery.nicescroll.js"></script>
+	<script src='/qzone16/Public/home/js/jquery-1.10.2.min.js'></script>
+	<script type="text/javascript" src="/qzone16/Public/home/js/jquery.nicescroll.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 

@@ -19,6 +19,23 @@ body {
 html, body {
 	height:100%;
 }
+.box-pwd{
+		background:#fff;
+width:600px;
+margin:60px auto 0;
+padding:0 40px 51px;
+background:#fff;
+    border-radius:18px;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	 box-shadow:0 0 3px #c5c2a9;
+	-moz-box-shadow: 0 0 3px #c5c2a9;
+	-webkit-box-shadow:0 0 3px #c5c2a9;
+}
+.link ul{
+	/*width:100%;*/
+	display: block;
+	margin:0 auto ;}
 
 .link li{
 	float: left;
@@ -29,6 +46,7 @@ html, body {
 	color:black;
 }
 .link a{
+	font-size: 12px;
 	color:#999;
 }
 .linkm a{
@@ -122,9 +140,13 @@ h6 {
 
 
 .main {
-	margin: 0 auto;
+	margin:0 auto  ;
 	/*position: relative;*/
-	width: 940px;}
+	width: 940px;
+}
+.footmain{
+	margin:auto 0;
+}
 
 .overflow {overflow:hidden;}
 
@@ -425,7 +447,7 @@ background:#fff;
 
 
 /*----- links -----*/
-.link-1{color:#d53827}
+.link-1{color:#d53827;float: left;}
 .link-1:hover{text-decoration:none;
 color:#343434}
 

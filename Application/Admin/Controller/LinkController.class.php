@@ -7,7 +7,7 @@
 		//链接首页
 		public function index()
 		{
-			$data = M('link')->select();
+			$data = M('link')->order('id desc')->select();
 			$this->assign('data',$data);
 			$this->display('Link/index');
 		}
@@ -22,7 +22,7 @@
 		//执行链接添加
 		public function doadd()
 		{
-			if(empty($_POST)) {
+			if(empty($_POST['linkname']) || empty($_POST['linkaddress'])) {
 				$this->error('请输入链接地址内容..');
 			}else {
 				if(M('link')->add($_POST)>0){

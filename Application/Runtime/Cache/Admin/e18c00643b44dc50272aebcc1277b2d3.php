@@ -8,8 +8,8 @@
 		<meta name="description" content="站长素材提供Bootstrap模版,Bootstrap教程,Bootstrap中文翻译等相关Bootstrap插件下载" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- basic styles -->
-		<link href="/qzone/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="/qzone/Public/assets/css/font-awesome.min.css" />
+		<link href="/qzone16/Public/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/font-awesome.min.css" />
 
 		<!--[if IE 7]>
 		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
@@ -23,9 +23,9 @@
 
 		<!-- ace styles -->
 
-		<link rel="stylesheet" href="/qzone/Public/assets/css/ace.min.css" />
-		<link rel="stylesheet" href="/qzone/Public/assets/css/ace-rtl.min.css" />
-		<link rel="stylesheet" href="/qzone/Public/assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="/qzone16/Public/assets/css/ace-skins.min.css" />
 
 		<!--[if lte IE 8]>
 		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
@@ -35,7 +35,7 @@
 
 		<!-- ace settings handler -->
 
-		<script src="/qzone/Public/assets/js/ace-extra.min.js"></script>
+		<script src="/qzone16/Public/assets/js/ace-extra.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
@@ -216,7 +216,7 @@
 
 								<li>
 									<a href="#">
-										<img src="/qzone/Public/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+										<img src="/qzone16/Public/assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Alex:</span>
@@ -233,7 +233,7 @@
 
 								<li>
 									<a href="#">
-										<img src="/qzone/Publicassets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+										<img src="/qzone16/Publicassets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Susan:</span>
@@ -250,7 +250,7 @@
 
 								<li>
 									<a href="#">
-										<img src="/qzone/Public/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+										<img src="/qzone16/Public/assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
 										<span class="msg-body">
 											<span class="msg-title">
 												<span class="blue">Bob:</span>
@@ -276,7 +276,7 @@
 
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/qzone/Public/assets/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="/qzone16/Public/assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
 									<?php echo session('AdminName');?>
@@ -596,10 +596,10 @@
 	<h1><?php echo ($title2); ?></h1>
 	<form action="<?php echo U('Userh/search');?>" method="post">
 		昵称:<input type="text" placeholder="请输入要查询的内容" name="username" >
-		等级:<input type="text" placeholder="请输入要查询的内容" name="level" >
+		<!-- 等级:<input type="text" placeholder="请输入要查询的内容" name="level" > -->
 		<button class="btn btn-default" >搜索</button>
 	</form>
-	<table class="table table-hover">
+	<table class="table table-striped table-bordered table-responsive table-hover table-responsive container-fluid">
 		<tr>
 			<th>#</th>
 			<th>昵称</th>
@@ -610,7 +610,7 @@
 			<th>头像</th>
 			<th>是否禁用</th>
 			<th>等级</th>
-			<th>操作</th>
+			<th class="col-md-2">操作</th>
 		</tr>
 		<?php if(is_array($list)): foreach($list as $key=>$vo): ?><tr>
 			<td><?php echo ($vo["id"]); ?></td>
@@ -624,7 +624,7 @@
 			</td>
 			<td><?php echo ($vo["phone"]); ?></td>
 			<td><?php echo ($vo["addtime"]); ?></td>
-			<td><img src="/qzone/Public/photos/touxiang/<?php echo ($vo["photo"]); ?>" alt="" width=40 height=40></td>
+			<td><img src="/qzone16/Public/photos/touxiang/<?php echo ($vo["photo"]); ?>" alt="" width=40 height=40></td>
 			<td><?php echo ($vo["status"]); ?></td>
 			<td><?php echo ($vo["level"]); ?></td>
 			<td>
@@ -712,7 +712,7 @@
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='/qzone/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+			window.jQuery || document.write("<script src='/qzone16/Public/assets/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 		</script>
 
 		<!-- <![endif]-->
@@ -724,10 +724,10 @@
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='/qzone/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+			if("ontouchend" in document) document.write("<script src='/qzone16/Public/assets/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 		</script>
-		<script src="/qzone/Public/assets/js/bootstrap.min.js"></script>
-		<script src="/qzone/Public/assets/js/typeahead-bs2.min.js"></script>
+		<script src="/qzone16/Public/assets/js/bootstrap.min.js"></script>
+		<script src="/qzone16/Public/assets/js/typeahead-bs2.min.js"></script>
 
 		<!-- page specific plugin scripts -->
 
@@ -735,19 +735,19 @@
 		  <script src="assets/js/excanvas.min.js"></script>
 		<![endif]-->
 
-		<script src="/qzone/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
-		<script src="/qzone/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
-		<script src="/qzone/Public/assets/js/jquery.slimscroll.min.js"></script>
-		<script src="/qzone/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
-		<script src="/qzone/Public/assets/js/jquery.sparkline.min.js"></script>
-		<script src="/qzone/Public/assets/js/flot/jquery.flot.min.js"></script>
-		<script src="/qzone/Public/assets/js/flot/jquery.flot.pie.min.js"></script>
-		<script src="/qzone/Public/assets/js/flot/jquery.flot.resize.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.slimscroll.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="/qzone16/Public/assets/js/jquery.sparkline.min.js"></script>
+		<script src="/qzone16/Public/assets/js/flot/jquery.flot.min.js"></script>
+		<script src="/qzone16/Public/assets/js/flot/jquery.flot.pie.min.js"></script>
+		<script src="/qzone16/Public/assets/js/flot/jquery.flot.resize.min.js"></script>
 
 		<!-- ace scripts -->
 
-		<script src="/qzone/Public/assets/js/ace-elements.min.js"></script>
-		<script src="/qzone/Public/assets/js/ace.min.js"></script>
+		<script src="/qzone16/Public/assets/js/ace-elements.min.js"></script>
+		<script src="/qzone16/Public/assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
 

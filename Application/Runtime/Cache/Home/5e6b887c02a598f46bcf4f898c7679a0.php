@@ -93,111 +93,39 @@
  <div class="border-horiz"></div>
 <!--==============================content=================================-->
 
-	<section id="content"><div class="ic"></div>
+  <section id="content"><div class="ic"></div>
   <!-- <div class="border-horiz"></div> -->
  
-  <div class="box-contact">
-    <h3>个人档 <a href="<?php echo U('Personal/editpwd');?>" style="color:blue;font-size:20px;float:right;">修改密码</a></h3>
-    <form id="contact-form" action="<?php echo U('Personal/save');?>" method="post">
-      <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
+  <div class="box-pwd">
+    <h3> 修改密码<a href="<?php echo U('Personal/editpwd');?>" style="color:blue;font-size:20px;float:right;"></a></h3>
+    <!-- <form id="contact-form" action="<?php echo U('Personal/savepwd');?>" method="post"> -->
+    <form id="contact-form">
+
+      <!-- <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div> -->
       <fieldset>
-      <?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="coll-1">
+      
+        <div class="coll-1">
           <div>
-            <div class="form-txt">昵称:</div>
+            <div class="form-txt">新密码:</div>
             <label class="name">
               <!-- 长度限制 -->
-              <input type="text" name="username" value="<?php echo ($vo["username"]); ?>">
-              <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label> -->
+              <input id="pwd" type="password" name="pwd">
+              <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
             <div class="clear"></div>
           </div>
           <div>
-            <div class="form-txt">真实姓名:</div>
+            <div class="form-txt">确认密码:</div>
             <label class="name">
-              <input type="text" name="name" value="<?php echo ($vo["name"]); ?>">
-              <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> --></label> 
-            <div class="clear"></div>
+              <input id="repwd" type="password" name="repwd">
+              <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span></label> 
+            <!-- <div class="clear"></div> -->
           </div>
-          <div>
-            <div class="form-txt">电话号码:</div>
-            <label class="phone">
-              <input type="tel" name="phone" value="<?php echo ($vo["phone"]); ?>">
-              <span class="error">*This is not a valid phone number.</span> <span class="empty">*This field is required.</span> </label>
-            <div class="clear"></div>
-          </div>
-          <div>
-            <div class="form-txt">性别:</div>
-            <!-- <label class="email"> -->
-           
-              <select name="" id="" style="width:50px;">
-                <option value="0" <?php if($vo["sex"] == '0'): ?>selected<?php endif; ?>>女</option>
-                <option value="1" <?php if($vo["sex"] == '1'): ?>selected<?php endif; ?>>男</option>
-              </select>
-              <!-- <span class="error">*This is not a valid email address.</span> <span class="empty">*This field is required.</span>  -->
-            <!-- </label> -->
-            <br><br>
-            <div class="clear"></div>
-          </div>
-          <div>
-            <div class="form-text">出生年月</div>
-            <select name="birth_y" id="">
-            <?php if(is_array($year)): foreach($year as $key=>$y): ?><option <?php if($y["year"] == $biry): ?>selected<?php endif; ?>><?php echo ($y["year"]); ?></option><?php endforeach; endif; ?>  
-            </select>
-
-            <select name="birth_m" id="mon">
-             
-            </select>
-            <script>
-                for(var i=1;i<=12;i++){
-                  mon.add(new Option(i,i));
-                }    
-            </script>
-
-            <select name="birth_d" id="date">
-            </select>
-            <script>
-                for(var i=1;i<=31;i++){
-                  date.add(new Option(i,i));
-                }    
-            </script>
-
-            <br><br>
-            <div class="clear"></div>
-          </div>
-          <div>
-            <div class="form-text">住址</div>
-            <select name="" id="">
-              <option value="0">江苏省</option>
-            </select>
-            <select name="" id="">
-              <option value="0">泰州</option>
-            </select>
-            <br><br>
-            <div class="clear"></div>
-          </div>
-          <div>
-            <div class="form-txt">民族:</div>
-            <label class="name">
-              <input type="text" name="race" value="<?php echo ($vo["race"]); ?>">
-              <!-- <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label> -->
-            <div class="clear"></div>
-          </div>
-        </div>
-     
-
-        <div class="coll-2">
-          <div>
-            <div class="form-txt">个性签名:</div>
-             <label class="message">
-              
-              <textarea></textarea>
-              <span class="error">*The message is too short.</span> <span class="empty">*This field is required.</span> </label> 
-            <div class="clear"></div>
-          </div>
-        </div><?php endforeach; endif; ?>
-        <div class="clear"></div>
-        <div class="btns"> <button class="btn" >保存</button><!--  <a class="btn" data-type="submit">send</a> --> </div>
+       <div class="clear"></div>
+        <div > <button class="btn" >保存</button><!--  <a class="btn" data-type="submit">send</a> --> </div>
+        
       </fieldset>
     </form>
+
   </div>
 </section>
 
@@ -228,5 +156,30 @@
 </footer>
 
 </body>
+
+  <script>
+    $('#pwd').blur(function(){
+      // alert(1);
+      // console.log($('#pwd').html);
+    });
+    $("button").click(function(){
+      // alert(1)
+      $.ajax({
+        type:'post',
+        url:"<?php echo U('Personal/savepwd');?>",
+        dataType:'json',
+        // data:'pwd',
+        data:$('#contact-form').serialize(),
+        success:function(data){
+          alert(data);
+        },
+        error:function(data){
+          alert('失败');
+        }
+      });
+      
+    });
+  </script>
+    
 
 </html>

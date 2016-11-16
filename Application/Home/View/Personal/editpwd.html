@@ -1,0 +1,66 @@
+<extend name="Homepage/index" />
+<block name="lunpo"></block>
+
+<block name="content">
+  <section id="content"><div class="ic"></div>
+  <!-- <div class="border-horiz"></div> -->
+ 
+  <div class="box-pwd">
+    <h3> 修改密码<a href="<{:U('Personal/editpwd')}>" style="color:blue;font-size:20px;float:right;"></a></h3>
+    <!-- <form id="contact-form" action="<{:U('Personal/savepwd')}>" method="post"> -->
+    <form id="contact-form">
+
+      <!-- <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div> -->
+      <fieldset>
+      
+        <div class="coll-1">
+          <div>
+            <div class="form-txt">新密码:</div>
+            <label class="name">
+              <!-- 长度限制 -->
+              <input id="pwd" type="password" name="pwd">
+              <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span> </label>
+            <div class="clear"></div>
+          </div>
+          <div>
+            <div class="form-txt">确认密码:</div>
+            <label class="name">
+              <input id="repwd" type="password" name="repwd">
+              <span class="error">*This is not a valid name.</span> <span class="empty">*This field is required.</span></label> 
+            <!-- <div class="clear"></div> -->
+          </div>
+       <div class="clear"></div>
+        <div > <button class="btn" >保存</button><!--  <a class="btn" data-type="submit">send</a> --> </div>
+        
+      </fieldset>
+    </form>
+
+  </div>
+</section>
+</block>  
+<block name="script">
+  <script>
+    $('#pwd').blur(function(){
+      // alert(1);
+      // console.log($('#pwd').html);
+    });
+    $("button").click(function(){
+      // alert(1)
+      $.ajax({
+        type:'post',
+        url:"<{:U('Personal/savepwd')}>",
+        dataType:'json',
+        // data:'pwd',
+        data:$('#contact-form').serialize(),
+        success:function(data){
+          alert(data);
+        },
+        error:function(data){
+          alert('失败');
+        }
+      });
+      
+    });
+  </script>
+    
+</block>      

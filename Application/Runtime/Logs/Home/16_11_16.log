@@ -1,0 +1,900 @@
+[ 2016-11-16T12:00:24+08:00 ] ::1 /qzone16/index.php/Home/Note/insert.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] Declaration of Home\Controller\NoteController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') C:\wamp\www\qzone16\Application\Home\Controller\NoteController.class.php 第 85 行.
+SQL: SHOW COLUMNS FROM `qzone_talk` [ RunTime:0.0100s ]
+ERR: SQLSTATE[HY000]: General error: 1364 Field 'uid' doesn't have a default value
+
+[ 2016-11-16T12:49:25+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/edit.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:49:33+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/edit.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:51:19+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:51:33+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:53:13+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:53:14+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:53:15+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:53:15+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T12:53:15+08:00 ] 127.0.0.1 /qzone16/index.php/Home/Personal/index.html
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+
+[ 2016-11-16T13:18:36+08:00 ] ::1 /qzone16/index.php/Home/Friend/index.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qzone.qzone_apply' doesn't exist
+
+[ 2016-11-16T13:18:51+08:00 ] ::1 /qzone16/index.php/Home/Leave/index-2.html
+ERR: 模板不存在:./Application/Home/View/Empty/404.html
+
+[ 2016-11-16T15:20:27+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:20:55+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:21:09+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:22:18+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:23:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:23:19+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:23:23+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:23:46+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:24:05+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: 非法操作:savepwd
+
+[ 2016-11-16T15:30:09+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: Call to a member function redirect() on unknown
+
+[ 2016-11-16T15:36:05+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+ERR: syntax error, unexpected '{'
+
+[ 2016-11-16T15:39:31+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/editpwd
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:40:29+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/editpwd
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:40:32+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/editpwd
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:40:41+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:41:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:41:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:41:08+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:41:09+08:00 ] ::1 /qzone16/index.php/Home/Personal/Personal/
+ERR: 非法操作:Personal
+
+[ 2016-11-16T15:46:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: syntax error, unexpected end of file, expecting function (T_FUNCTION)
+
+[ 2016-11-16T15:46:46+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: Call to a member function where() on boolean
+
+[ 2016-11-16T15:46:51+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: Call to a member function where() on boolean
+
+[ 2016-11-16T15:48:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: syntax error, unexpected '.'
+
+[ 2016-11-16T15:49:26+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: Call to a member function where() on boolean
+
+[ 2016-11-16T15:49:29+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: Call to a member function where() on boolean
+
+[ 2016-11-16T15:49:59+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+ERR: Call to a member function where() on boolean
+
+[ 2016-11-16T16:03:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected '$linklist' (T_VARIABLE), expecting function (T_FUNCTION)
+
+[ 2016-11-16T16:05:10+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:13+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:14+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:15+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:17+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:05:17+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:08:43+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:12+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:13+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:14+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:14+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:36+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:36+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:36+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:09:37+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:18:14+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:02+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:03+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:04+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:04+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:05+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:05+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:20:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:21:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:21:07+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:21:48+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:21:49+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:22:35+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:22:36+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:22:36+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:22:36+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:22:37+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected ','
+
+[ 2016-11-16T16:23:22+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:23+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:25+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:25+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:23:56+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected '(', expecting ',' or ';'
+
+[ 2016-11-16T16:23:57+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: syntax error, unexpected '(', expecting ',' or ';'
+
+[ 2016-11-16T16:25:13+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:25:14+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:25:15+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:25:15+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:25:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:25:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:25:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Call to a member function index() on boolean
+
+[ 2016-11-16T16:28:42+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:28:46+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Function name must be a string
+
+[ 2016-11-16T16:39:43+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Cannot use object of type Home\Event\LinkEvent as array
+
+[ 2016-11-16T16:39:47+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd
+ERR: Cannot use object of type Home\Event\LinkEvent as array
+
+[ 2016-11-16T19:23:57+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-11-16T19:24:20+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:24:34+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T19:25:04+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T19:26:28+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T19:29:51+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:29:51+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2016-11-16T19:29:56+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-16T19:29:56+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:45:35+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:45:35+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0440s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:45:40+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:45:40+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-16T19:45:46+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0390s ]
+SQL: UPDATE `qzone_user` SET `pwd`='1' WHERE ( id=1 ) [ RunTime:0.0240s ]
+
+[ 2016-11-16T19:46:20+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0700s ]
+SQL: UPDATE `qzone_user` SET `pwd`='1' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T19:46:48+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T19:47:06+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:48:02+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0100s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T19:48:21+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0130s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T19:49:02+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0060s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T19:49:59+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0420s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0060s ]
+
+[ 2016-11-16T19:50:29+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:50:59+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0070s ]
+SQL: UPDATE `qzone_user` SET `pwd`='1' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T19:52:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-16T19:52:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T19:57:46+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0200s ]
+SQL: UPDATE `qzone_user` SET `pwd`='1' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T19:58:16+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0180s ]
+SQL: UPDATE `qzone_user` SET `pwd`='1' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T19:58:46+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0020s ]
+SQL: UPDATE `qzone_user` SET `pwd`='2' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:00:03+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0350s ]
+SQL: UPDATE `qzone_user` SET `pwd`='3' WHERE ( id=1 ) [ RunTime:0.0050s ]
+
+[ 2016-11-16T20:00:19+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0430s ]
+SQL: UPDATE `qzone_user` SET `pwd`='2' WHERE ( id=1 ) [ RunTime:0.0060s ]
+
+[ 2016-11-16T20:00:33+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0440s ]
+SQL: UPDATE `qzone_user` SET `pwd`='3' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:00:42+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0680s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0110s ]
+
+[ 2016-11-16T20:06:59+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0460s ]
+SQL: UPDATE `qzone_user` SET `pwd`='2' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:07:50+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0210s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:07:54+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:07:54+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:08:04+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0370s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:08:22+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0380s ]
+SQL: UPDATE `qzone_user` SET `pwd`='t' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:09:10+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0380s ]
+SQL: UPDATE `qzone_user` SET `pwd`='4' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:09:39+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0390s ]
+SQL: UPDATE `qzone_user` SET `pwd`='e' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:12:23+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:12:23+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:20:27+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T20:22:22+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T20:23:11+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:24:04+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T20:24:47+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0310s ]
+SQL: UPDATE `qzone_user` SET `pwd`='5' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:24:54+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:25:37+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T20:26:55+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:27:13+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0430s ]
+SQL: UPDATE `qzone_user` SET `pwd`='5' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:27:54+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:28:28+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0020s ]
+SQL: UPDATE `qzone_user` SET `pwd`='56' WHERE ( id=1 ) [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:29:13+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0170s ]
+SQL: UPDATE `qzone_user` SET `pwd`='7' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:29:37+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0300s ]
+SQL: UPDATE `qzone_user` SET `pwd`='6' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:34:04+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0360s ]
+SQL: UPDATE `qzone_user` SET `pwd`='3' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:34:34+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:34:34+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:36:15+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0140s ]
+SQL: UPDATE `qzone_user` SET `pwd`='2' WHERE ( id=1 ) [ RunTime:0.0020s ]
+
+[ 2016-11-16T20:36:24+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0120s ]
+SQL: UPDATE `qzone_user` SET `pwd`='2' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:36:34+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0150s ]
+SQL: UPDATE `qzone_user` SET `pwd`='7' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:38:01+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0400s ]
+SQL: UPDATE `qzone_user` SET `pwd`='5' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:42:40+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0250s ]
+SQL: UPDATE `qzone_user` SET `pwd`='5' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:43:44+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0110s ]
+SQL: UPDATE `qzone_user` SET `pwd`='6' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:43:53+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0410s ]
+SQL: UPDATE `qzone_user` SET `pwd`='x' WHERE ( id=1 ) [ RunTime:0.0100s ]
+
+[ 2016-11-16T20:44:52+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0190s ]
+SQL: UPDATE `qzone_user` SET `pwd`='u' WHERE ( id=1 ) [ RunTime:0.0000s ]
+
+[ 2016-11-16T20:52:28+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:52:39+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:53:05+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:53:35+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-16T20:55:33+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:56:11+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:58:29+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-16T20:58:29+08:00 ] ::1 /qzone16/index.php/Home/Personal/editpwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `qzone_link` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `qzone_link`  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title C:\wamp\www\qzone16\Application\Runtime\Cache\Home\5e6b887c02a598f46bcf4f898c7679a0.php 第 89 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-16T20:58:39+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0310s ]
+SQL: UPDATE `qzone_user` SET `pwd`='Y' WHERE ( id=1 ) [ RunTime:0.0010s ]
+
+[ 2016-11-16T20:58:56+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-16T22:51:18+08:00 ] ::1 /qzone16/index.php/Home/Personal/savepwd.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `qzone_user` [ RunTime:0.0010s ]
+SQL: UPDATE `qzone_user` SET `pwd`='123' WHERE ( id=1 ) [ RunTime:0.0000s ]
+

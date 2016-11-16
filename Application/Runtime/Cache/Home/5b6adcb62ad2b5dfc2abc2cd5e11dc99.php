@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <!-- Bootstrap -->
-    <link href="/qzone15/Public/home/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="/qzone15/Public/home/my.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/qzone16/Public/home/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/qzone16/Public/home/my.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- <link href="./dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="./dist/css/my.css" rel="stylesheet"> -->
     <style>
@@ -31,7 +31,7 @@
         }
     </style>
   </head>
-  <body style="background:url('/qzone15/Public/home/dis/images/1.jpg');">
+  <body style="background:url('/qzone16/Public/home/dis/images/1.jpg');">
     <div class="col-md-3" style="left:800px;top:150px;width:350px;height:300px;background:white;border-radius:5px;z-index:10;">
       <p class="h3" style="text-align:center;">账号密码登录</p>
       <form class="form-horizontal " role="form"  action="<?php echo U('Login/login');?>" method="post">
@@ -70,7 +70,7 @@
     
     
     <!-- <center> -->
-      <div class="col-md-6">
+    <div class="col-md-6">
     <ul class="link">
       <?php if(is_array($llinklist)): foreach($llinklist as $key=>$vo): ?><li><a href="<?php echo ($vo["linkaddress"]); ?>"><?php echo ($vo["linkname"]); ?>&nbsp;&nbsp;|&nbsp;&nbsp;</a></li><?php endforeach; endif; ?>
       <br>
@@ -82,10 +82,10 @@
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/qzone15/Public/home/js/jquery.min.js"></script>
-    <script src="/qzone15/Public/home/js/holder.min.js"></script>
+    <script src="/qzone16/Public/home/js/jquery.min.js"></script>
+    <script src="/qzone16/Public/home/js/holder.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/qzone15/Public/home/js/bootstrap.min.js"></script>
+    <script src="/qzone16/Public/home/js/bootstrap.min.js"></script>
   </body>
 </html>

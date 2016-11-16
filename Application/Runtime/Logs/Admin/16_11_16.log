@@ -1,0 +1,18 @@
+[ 2016-11-16T09:29:20+08:00 ] 127.0.0.1 /qzone16/index.php/Admin/Note/tables.html
+ERR: 非法操作:tables
+
+[ 2016-11-16T09:29:26+08:00 ] 127.0.0.1 /qzone16/index.php/Admin/Note/tables.html
+ERR: 非法操作:tables
+
+[ 2016-11-16T09:53:24+08:00 ] 127.0.0.1 /qzone16/index.php/admin/login
+ERR: 无法加载控制器:Login
+
+[ 2016-11-16T21:00:40+08:00 ] ::1 /qzone16/index.php/ADMIN
+ERR: 无法加载控制器:Index
+
+[ 2016-11-16T22:41:02+08:00 ] ::1 /qzone16/index.php/Admin/Userh/tables.html
+ERR: 非法操作:tables
+
+[ 2016-11-16T22:48:33+08:00 ] ::1 /qzone16/index.php/Admin/Notice/tables.html
+ERR: 非法操作:tables
+

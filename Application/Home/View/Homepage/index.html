@@ -85,66 +85,69 @@
   </div>
 
   <block name="lunpo">
-  <div class="box-slider">
+  <!-- <div class="box-slider">
     <div class="flexslider">
       <ul class="slides">
         <li> <img alt="" src="__PUBLIC__/homepage/images/slide-1.jpg"></li>
         <li> <img alt="" src="__PUBLIC__/homepage/images/slide-2.jpg"></li>
       </ul>
     </div>
-  </div>
+  </div> -->
   </block>
   <div class="box-slogan">
     <h3><{$title}></h3>
   </div>
 </header>
 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+ <div class="border-horiz"></div>
 <!--==============================content=================================-->
 <block name="content">
 <section id="content">
 
-  <!-- <div class="border-horiz"></div> -->
+ <!--  <div class="border-horiz"></div> -->
   <div class="container_12">
+    <div class="message" contentEditable='true' name='message' style="width:940px;height:125px;border:1px solid #ccc"></div>
+          <br>
+          <div class="But">
+            <img src="__PUBLIC__/home/images/bba_thumb.gif" class='smallpic'/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class='btn btn-success'>发表</button>
+          </div>
     <article class="side-bar extra1">
+      .....
     </article>
     <article class="grid_8">
       <h3>好友动态</h3>
       <ul class="list-recipes extra">
-        <li>
-          <p>昵称</p>
+        
+        <li style="border:1px solid #999">
+          <figure class="box-img"><img src="images/page5-img3.jpg " alt="" />头像</figure>
           <div class="overflow">
-            <p>说说内容</p>
-            <p>发表时间</p>
-          </div>
+            <h4>昵称</h4>
+            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.</p>
+            <p>时间</p>
+            <a href="#" class="btn">点赞</a> </div>
           <div class="clear"></div>
         </li>
         <hr>
-        <li>
-          <figure class="box-img"><img src="images/page5-img3.jpg " alt="" /></figure>
-          <div class="overflow">
-            <h4>Sam Dowson</h4>
-            <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.</p>
-            <a href="#" class="btn">Read more</a> </div>
-          <div class="clear"></div>
-        </li>
-        <li>
+        <!-- <li>
           <figure class="box-img"><img src="images/page5-img4.jpg " alt="" /></figure>
           <div class="overflow">
             <h4>Jane smart</h4>
             <p>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam. et justo duo dolores et ea rebum.</p>
             <a href="#" class="btn">Read more</a> </div>
           <div class="clear"></div>
-        </li>
+        </li> -->
       </ul>
     </article>
     <div class="clear"></div>
   </div>
 </section>
-</section>
+
 </block>
 <!--==============================footer=================================-->
 <footer>
-  <div class="main">
+  <center>
+  <div class="footmain">
    <!--  <ul class="soc-list">
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-1.png"></a></li>
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-2.png"></a></li>
@@ -152,19 +155,23 @@
       <li><a href="#"><img alt="" src="__PUBLIC__/homepage/images/icon-4.png"></a></li>
     </ul> -->
     <!-- <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div> -->
-    <foreach name="linklist" item="vo" >
-    <ul class="link">
-      <li><a href="<{$vo.linkaddress}>"><{$vo.linkname}>&nbsp;&nbsp;|&nbsp;&nbsp;</a></li>
-      
+   <!-- <center> -->
+    <ul class="soc-list link">
+      <foreach name="linklist" item="vo" >
+      <li><a href="<{$vo.linkaddress}>"><{$vo.linkname}>&nbsp;|&nbsp;</a></li>
+      </foreach>
     </ul>
-    
-    </script>
-    </foreach>
-    <center><p class="linkm">Copyright © 2005 - 2016 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml">All Rights Reserved.</a></p></center>
-    <center>ykz Company<center>
+    <!-- </center> -->
+    <!-- </script> -->
+     
+    <br>
+    <!-- <center> --><p class="linkm">Copyright © 2005 - 2016 Tencent. <a href="http://www.tencent.com/en-us/le/copyrightstatement.shtml">All Rights Reserved.</a></p><!-- </center> -->
+    <!-- <center> -->ykz Company<!-- </center> -->
     <div class="clear"></div>
   </div>
+</center>
 </footer>
 
 </body>
+<block name="script"></block>
 </html>
