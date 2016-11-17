@@ -7,7 +7,9 @@
  
   <div class="box-contact">
     <h3>个人档 <a href="<{:U('Personal/editpwd')}>" style="color:blue;font-size:20px;float:right;">修改密码</a></h3>
-    <form id="contact-form" action="<{:U('Personal/save')}>" method="post">
+    <!-- <form id="contact-form" action="<{:U('Personal/save')}>" method="post"> -->
+    <form id="contact-form">
+
       <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
       <fieldset>
       <foreach name="list" item="vo">
@@ -49,30 +51,18 @@
           </div>
           <div>
             <div class="form-text">出生年月</div>
-            <select name="birth_y" id="">
-            <foreach name="year" item="y">  
-              <option <if condition="$y.year eq $biry">selected</if>><{$y.year}></option>
-            </foreach>  
-            </select>
+            
+            <select name="year" id="year">
+              <option value="<{$year}>"><{$year}></option></select>年
 
-            <select name="birth_m" id="mon">
-             
-            </select>
-            <script>
-                for(var i=1;i<=12;i++){
-                  mon.add(new Option(i,i));
-                }    
-            </script>
+            <select name="month" id="mon">
+             <option value="<{$month}>"><{$month}></option>
+            </select>月
 
-            <select name="birth_d" id="date">
-            </select>
-            <script>
-                for(var i=1;i<=31;i++){
-                  date.add(new Option(i,i));
-                }    
-            </script>
-
-            <br><br>
+            <select name="day" id="date">
+              <option value="<{$day}>"><{$day}></option>
+            </select>日
+           <br><br>
             <div class="clear"></div>
           </div>
           <div>
@@ -113,4 +103,26 @@
     </form>
   </div>
 </section>
-</block>        
+</block> 
+<block name="script">
+  <script>
+  
+    $("button").click(function(){
+      // alert(1)
+      $.ajax({
+        type:'post',
+        url:"<{:U('Personal/save')}>",
+        dataType:'json',
+        
+        data:$('#contact-form').serialize(),
+        success:function(data){
+          alert(data);
+        },
+        error:function(data){
+          alert('失败');
+        }
+      });
+      
+    });
+</script>
+</block>       

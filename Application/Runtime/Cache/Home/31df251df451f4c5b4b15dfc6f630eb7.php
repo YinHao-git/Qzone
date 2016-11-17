@@ -4,22 +4,23 @@
 <title>Home</title>
 <meta charset="utf-8">
 <!--css-->
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/grid.css" type="text/css" media="screen">
-<link rel="icon" href="/qzone16/Public/homepage/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/qzone16/Public/homepage/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/grid.css" type="text/css" media="screen">
+<link rel="icon" href="/qzone17/Public/homepage/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/qzone17/Public/homepage/images/favicon.ico" type="image/x-icon" />
 <!-- <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'> -->
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/flexslider.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/qzone16/Public/my.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/flexslider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/my.css" type="text/css" media="screen">
 
 <!-- Bootstrap -->
-   <!--  <link href="/qzone16/Public/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+   <!--  <link href="/qzone17/Public/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <!--js-->
-<script type="text/javascript" src="/qzone16/Public/homepage/js/jquery-1.7.1.min.js" ></script>
-<script type="text/javascript" src="/qzone16/Public/homepage/js/superfish.js"></script>
-<script type="text/javascript" src="/qzone16/Public/homepage/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/qzone17/Public/js/date/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="/qzone17/Public/js/date/calender.js" ></script>
+<script type="text/javascript" src="/qzone17/Public/homepage/js/superfish.js"></script>
+<script type="text/javascript" src="/qzone17/Public/homepage/js/jquery.flexslider-min.js"></script>
 
 <script>	
 			jQuery(window).load(function() {								
@@ -36,7 +37,7 @@
 	</script>
   <style>
    body{
-      background-image: url('/qzone16/Public/home/dis/images/11.jpg');
+      background-image: url('/qzone17/Public/home/dis/images/11.jpg');
     }
 
   </style>
@@ -48,7 +49,7 @@
 <header>
   <div class="line-top">
     <ul class="mr200">
-      <!-- <li><h1><img alt="" src="/qzone16/Public/photos/touxiang/default.jpg" width=35 height=35>&nbsp;&nbsp;&nbsp;&nbsp;GNEZGNEZ </h1></li> -->
+      <!-- <li><h1><img alt="" src="/qzone17/Public/photos/touxiang/default.jpg" width=35 height=35>&nbsp;&nbsp;&nbsp;&nbsp;GNEZGNEZ </h1></li> -->
       <li><a href="">[充值]</a></li>
 
       <li><a href="<?php echo U('Homepage/out');?>">[退出]</a></li>
@@ -58,7 +59,7 @@
   <div class="main">
     <div class="row-top">
       <!-- <div style="height:40px;width:200px;"> -->
-      <h1 style="height:80px;"><img alt="" src="/qzone16/Public/photos/touxiang/default.jpg" width=80 height=80>&nbsp;&nbsp;&nbsp;&nbsp;<ul class="fr"><li style="width:155px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></li>
+      <h1 style="height:80px;"><img alt="" src="/qzone17/Public/photos/touxiang/default.jpg" width=80 height=80>&nbsp;&nbsp;&nbsp;&nbsp;<ul class="fr"><li style="width:155px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></li>
         </ul> </h1>
       <nav>
         <ul class="sf-menu">
@@ -98,7 +99,9 @@
  
   <div class="box-contact">
     <h3>个人档 <a href="<?php echo U('Personal/editpwd');?>" style="color:blue;font-size:20px;float:right;">修改密码</a></h3>
-    <form id="contact-form" action="<?php echo U('Personal/save');?>" method="post">
+    <!-- <form id="contact-form" action="<?php echo U('Personal/save');?>" method="post"> -->
+    <form id="contact-form">
+
       <div class="success"> Contact form submitted! <strong>We will be in touch soon.</strong> </div>
       <fieldset>
       <?php if(is_array($list)): foreach($list as $key=>$vo): ?><div class="coll-1">
@@ -139,28 +142,18 @@
           </div>
           <div>
             <div class="form-text">出生年月</div>
-            <select name="birth_y" id="">
-            <?php if(is_array($year)): foreach($year as $key=>$y): ?><option <?php if($y["year"] == $biry): ?>selected<?php endif; ?>><?php echo ($y["year"]); ?></option><?php endforeach; endif; ?>  
-            </select>
+            
+            <select name="year" id="year">
+              <option value="<?php echo ($year); ?>"><?php echo ($year); ?></option></select>年
 
-            <select name="birth_m" id="mon">
-             
-            </select>
-            <script>
-                for(var i=1;i<=12;i++){
-                  mon.add(new Option(i,i));
-                }    
-            </script>
+            <select name="month" id="mon">
+             <option value="<?php echo ($month); ?>"><?php echo ($month); ?></option>
+            </select>月
 
-            <select name="birth_d" id="date">
-            </select>
-            <script>
-                for(var i=1;i<=31;i++){
-                  date.add(new Option(i,i));
-                }    
-            </script>
-
-            <br><br>
+            <select name="day" id="date">
+              <option value="<?php echo ($day); ?>"><?php echo ($day); ?></option>
+            </select>日
+           <br><br>
             <div class="clear"></div>
           </div>
           <div>
@@ -206,10 +199,10 @@
   <center>
   <div class="footmain">
    <!--  <ul class="soc-list">
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-1.png"></a></li>
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-2.png"></a></li>
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-3.png"></a></li>
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-4.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-1.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-2.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-3.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-4.png"></a></li>
     </ul> -->
     <!-- <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div> -->
    <!-- <center> -->
@@ -228,5 +221,26 @@
 </footer>
 
 </body>
+
+  <script>
+  
+    $("button").click(function(){
+      // alert(1)
+      $.ajax({
+        type:'post',
+        url:"<?php echo U('Personal/save');?>",
+        dataType:'json',
+        
+        data:$('#contact-form').serialize(),
+        success:function(data){
+          alert(data);
+        },
+        error:function(data){
+          alert('失败');
+        }
+      });
+      
+    });
+</script>
 
 </html>

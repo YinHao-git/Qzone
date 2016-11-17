@@ -4,22 +4,23 @@
 <title>Home</title>
 <meta charset="utf-8">
 <!--css-->
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/reset.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/grid.css" type="text/css" media="screen">
-<link rel="icon" href="/qzone16/Public/homepage/images/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="/qzone16/Public/homepage/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/grid.css" type="text/css" media="screen">
+<link rel="icon" href="/qzone17/Public/homepage/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/qzone17/Public/homepage/images/favicon.ico" type="image/x-icon" />
 <!-- <link href='http://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic' rel='stylesheet' type='text/css'> -->
-<link rel="stylesheet" href="/qzone16/Public/homepage/css/flexslider.css" type="text/css" media="screen">
-<link rel="stylesheet" href="/qzone16/Public/my.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/homepage/css/flexslider.css" type="text/css" media="screen">
+<link rel="stylesheet" href="/qzone17/Public/my.css" type="text/css" media="screen">
 
 <!-- Bootstrap -->
-   <!--  <link href="/qzone16/Public/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+   <!--  <link href="/qzone17/Public/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
 <!--js-->
-<script type="text/javascript" src="/qzone16/Public/homepage/js/jquery-1.7.1.min.js" ></script>
-<script type="text/javascript" src="/qzone16/Public/homepage/js/superfish.js"></script>
-<script type="text/javascript" src="/qzone16/Public/homepage/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/qzone17/Public/js/date/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript" src="/qzone17/Public/js/date/calender.js" ></script>
+<script type="text/javascript" src="/qzone17/Public/homepage/js/superfish.js"></script>
+<script type="text/javascript" src="/qzone17/Public/homepage/js/jquery.flexslider-min.js"></script>
 
 <script>	
 			jQuery(window).load(function() {								
@@ -36,7 +37,7 @@
 	</script>
   <style>
    body{
-      background-image: url('/qzone16/Public/home/dis/images/11.jpg');
+      background-image: url('/qzone17/Public/home/dis/images/11.jpg');
     }
 
   </style>
@@ -48,7 +49,7 @@
 <header>
   <div class="line-top">
     <ul class="mr200">
-      <!-- <li><h1><img alt="" src="/qzone16/Public/photos/touxiang/default.jpg" width=35 height=35>&nbsp;&nbsp;&nbsp;&nbsp;GNEZGNEZ </h1></li> -->
+      <!-- <li><h1><img alt="" src="/qzone17/Public/photos/touxiang/default.jpg" width=35 height=35>&nbsp;&nbsp;&nbsp;&nbsp;GNEZGNEZ </h1></li> -->
       <li><a href="">[充值]</a></li>
 
       <li><a href="<?php echo U('Homepage/out');?>">[退出]</a></li>
@@ -58,8 +59,7 @@
   <div class="main">
     <div class="row-top">
       <!-- <div style="height:40px;width:200px;"> -->
-      <h1 style="height:80px;"><img alt="" src="/qzone16/Public/photos/touxiang/default.jpg" width=80 height=80>&nbsp;&nbsp;&nbsp;&nbsp;<ul class="fr"><li style="width:155px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;"></li>
-        </ul> </h1>
+      <h1 style="height:80px;"><img alt="" src="/qzone17/Public/photos/touxiang/default.jpg" width=80 height=80>&nbsp;&nbsp;&nbsp;&nbsp;</h1>
       <nav>
         <ul class="sf-menu">
           <li><a href="<?php echo U('Homepage/index');?>">个人中心</a></li>
@@ -85,14 +85,7 @@
   </div>
 
   
-  <!-- <div class="box-slider">
-    <div class="flexslider">
-      <ul class="slides">
-        <li> <img alt="" src="/qzone16/Public/homepage/images/slide-1.jpg"></li>
-        <li> <img alt="" src="/qzone16/Public/homepage/images/slide-2.jpg"></li>
-      </ul>
-    </div>
-  </div> -->
+  
   
   <div class="box-slogan">
     <h3><?php echo ($title); ?></h3>
@@ -109,7 +102,7 @@
     <div class="message" contentEditable='true' name='message' style="width:940px;height:125px;border:1px solid #ccc"></div>
           <br>
           <div class="But">
-            <img src="/qzone16/Public/home/images/bba_thumb.gif" class='smallpic'/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="/qzone17/Public/home/images/bba_thumb.gif" class='smallpic'/>&nbsp;&nbsp;&nbsp;&nbsp;
             <button class='btn btn-success'>发表</button>
           </div>
     <article class="side-bar extra1">
@@ -149,10 +142,10 @@
   <center>
   <div class="footmain">
    <!--  <ul class="soc-list">
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-1.png"></a></li>
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-2.png"></a></li>
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-3.png"></a></li>
-      <li><a href="#"><img alt="" src="/qzone16/Public/homepage/images/icon-4.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-1.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-2.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-3.png"></a></li>
+      <li><a href="#"><img alt="" src="/qzone17/Public/homepage/images/icon-4.png"></a></li>
     </ul> -->
     <!-- <div class="policy">Professional free website templates <a href="http://www.cssmoban.com" target="_blank">at www.cssmoban.com</a>.<br>Website Template Collet from <a href="http://www.cssmoban.com" >www.cssmoban.com</a> </div> -->
    <!-- <center> -->

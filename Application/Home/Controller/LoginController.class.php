@@ -18,6 +18,7 @@
 				$map['pwd']=I('post.pwd');
 				$data=M('user')->where($map)->select();
         		$id = $data[0]['id'];
+
         		$phone=$data[0]['phone'];
         		$username=$data[0]['username'];
         		// var_dump($data);exit;
@@ -36,6 +37,7 @@
 	               session('phone',$phone);
 	               session('id',$id);
 	               session('username',"$username");
+	               
 		           $this->success('登录成功!', U('Homepage/index'));
 		        } else {
 		           $this->error('用户名或密码错误....');

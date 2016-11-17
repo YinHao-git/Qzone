@@ -37,20 +37,12 @@ class PersonalController extends Controller
 		$data=$user->field('user.username,user.sex,user.phone,info.name,info.age,info.birth,info.race')->table('qzone_user user,qzone_info info')->where('user.id=info.uid and user.id='.$id)->select();
 		// dump($data);
 		// dump($data[0]['birth']);exit;
+		//拆分年月日
 		$birth=explode('-',$data[0]['birth']);
-		// dump($birth);exit;
-		$year=M('year');
-		$yearlist=$year->select();
-		// $pro=M('province');
-		// $prolist=$pro->select();
-		// echo $user->getLastSql();
 		//年月日
-		$this->assign('biry',$birth[0]);
-		$this->assign('year',$yearlist);
-		$this->assign('birm',$birth[1]);
-		$this->assign('month',$monthlist);
-		$this->assign('bird',$birth[2]);
-		$this->assign('date',$datelist);
+		$this->assign('year',$birth[0]);
+		$this->assign('month',$birth[1]);
+		$this->assign('day',$birth[2]);
 		//省份 城市
 		// $this->assign('province',$prolist);
 		// dump($prolist);exit;
@@ -63,12 +55,13 @@ class PersonalController extends Controller
 	public function save()
 	{
 		// dump($_POST);
-		if(empty($_POST)){
-			$this->redirect('Personal/edit');
+		if(empty($_POST['username'])){
+			$this->ajaxReturn('昵称为空');
+			// $this->redirect('Personal/edit');
 			exit;
 		}
 		// var_dump($_POST);exit;
-		$birth=$_POST['birth_y']."-".$_POST['birth_m']."-".$_POST['birth_d'];
+		$birth=$_POST['year']."-".$_POST['month']."-".$_POST['day'];
 		// echo $birth;
 		$id=session('id');
 		M('user')->create();
@@ -77,7 +70,8 @@ class PersonalController extends Controller
 		M('info')->where('id='.$id)->save();
 		
 		M('info')->where('id='.$id)->setField('birth',$birth);
-		$this->redirect('Personal/edit');
+		$this->ajaxReturn('修改成功');
+		// $this->redirect('Personal/edit');
 		// echo M('info')->getLastSql();
 		
 	}
@@ -92,18 +86,18 @@ class PersonalController extends Controller
 	}
 	public function savepwd()
 	{
-		if (!IS_AJAX) {
-            $this->error('sdsadsa',U('Personal/editpwd'));
-            exit;
-        }
+		// if (!IS_AJAX) {
+  //           $this->error('sdsadsa',U('Personal/editpwd'));
+  //           exit;
+  //       }
 		
 		// dump($_POST);exit;
 
 		if(empty($_POST['pwd'])||empty($_POST['repwd'])){
-			$this->redirect('Personal/editpwd');
+			// $this->redirect('Personal/editpwd');
 			$this->ajaxReturn('修改');
 			
-			exit;
+			// exit;
 		}
 		if($_POST['pwd']!==$_POST['repwd']){
 			$this->error('两次密码不一样...');

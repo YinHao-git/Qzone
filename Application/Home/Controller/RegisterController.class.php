@@ -48,8 +48,13 @@
 	        M('user')->addtime=date("Y-m-d H:i:s",time());
 	        M('user')->photo='__PUBLIC__/home/dis/images/1.png';
 			M('user')->level=0;
+			M('user')->status=0;
+
 				   //执行添加
 	            if(M('user')->add() > 0) {
+	            	// $data=M('user')->where($map['phone'])->select();
+	            	// dump($data['id']);exit;
+	            	// echo M('info')->getLastSql();exit;
 		           $this->success('恭喜您,注册成功!', U('Login/index'));
 		        } else {
 		           $this->error('注册失败....');

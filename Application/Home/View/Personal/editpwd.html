@@ -50,8 +50,8 @@
         type:'post',
         url:"<{:U('Personal/savepwd')}>",
         dataType:'json',
-        // data:'pwd',
-        data:$('#contact-form').serialize(),
+        data:pwd,
+        // data:$('#contact-form').serialize(),
         success:function(data){
           alert(data);
         },
